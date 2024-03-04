@@ -1,0 +1,136 @@
+﻿@using System.Globalization;
+@model FashionShop.Models.DTO.OrderDTO.GetOrderByUserIdDTO
+@{
+    ViewData["Title"] = "OrderDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    double totalOrder = 0;
+
+    double voucherValue = 0;
+
+}
+
+<div class="full-banner" style="height: 135px">
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="~/Home"><i class="fa fa-home"></i></a></li>
+            <li><a>Chi tiết đơn hàng</a></li>
+            <li style="float: right;">
+                <a href="~/Account/OrderList">Quay lại</a>
+            </li>
+        </ul>
+
+        <div class="row featured-block">
+            <div class="main-head-block" style="margin-top: 0">
+                <h2>Chi tiết đơn hàng</h2>
+            </div>
+
+            <div class="post-item row">
+                <div class="col-md-4">
+                    <h3>Thông tin giao hàng</h3>
+                    <p>Mã đơn hàng: @Model.ID</p>
+                    <p>Tên người nhận: @Model.FullName</p>
+                    <p>Số điện thoại: @Model.PhoneNumber</p>
+                    <p>Tỉnh/Thành: @Model.ProvinceName</p>
+                    <p>Quận/Huyện: @Model.DistrictName</p>
+                    <p>Phường/Xã: @Model.WardName</p>
+                    <p>Địa chỉ giao hàng: @Model.Address</p>
+                    <p>Nội dung đơn hàng: @Model.Note</p>
+
+                    @if (Model.TypePayment == 1)
+                    {
+                        <p>Loại thanh toán: COD</p>
+                    }
+                    else if (Model.TypePayment == 2)
+                    {
+                        <p>Loại thanh toán: Chuyển khoản</p>
+                    }
+
+                    
+                </div>
+
+                <div class="col-md-8">
+                    <h3>Thông tin đơn hàng</h3>
+                    <table class="table table-bordered table-striped table-hover text-center">
+                        <thead>
+                            <tr class="table-dark" style="font-weight: bold">
+                                <td>Hình ảnh</td>
+                                <td>Tên sản phẩm</td>
+                                <td>Giá</td>
+                                <td>Số lượng</td>
+                                <td>Tổng cộng</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.OrderDetails)
+                            {
+                                <tr>
+                                    <td><img src="~/@item.Product.Image" style="height: 80px" /></td>
+                                    <td>@item.Product.Name</td>
+                                    <td>@item.Price.ToString("C0", new CultureInfo("vi-VN"))</td>
+                                    <td>@item.Quantity</td>
+
+                                    @{
+                                        var total = item.Price * item.Quantity;
+                                        <td>@total.ToString("C0", new CultureInfo("vi-VN"))</td>
+                                    }
+                                </tr>
+
+                                totalOrder += item.Price * item.Quantity;
+                            }
+
+                            @if (Model.Voucher != null)
+                            {
+                                if (Model.Voucher.DiscountAmount == true)
+                                {
+                                    voucherValue = Model.Voucher.DiscountValue;
+                                }
+                                else
+                                {
+                                    voucherValue = totalOrder * Model.Voucher.DiscountValue / 100;
+                                }
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+
+                
+
+                <div class="spacer" style="height: 20px"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-8">
+                    <table class="table">
+                        <tbody>
+                            <tr style="font-size:16px">
+                                <td class="text-left cart-table-total-label"><strong>Tổng tiền hàng: </strong></td>
+                                <td class="text-right cart-table-total">@totalOrder.ToString("C0", new CultureInfo("vi-VN"))</td>
+                            </tr>
+                            <tr style="font-size:16px">
+                                <td class="text-left cart-table-total-label"><strong>Phí vận chuyển: </strong></td>
+                                <td class="text-right cart-table-total">@Model.DeliveryFee.ToString("C0", new CultureInfo("vi-VN"))</td>
+                            </tr>
+                            <tr style="font-size:16px">
+                                <td class="text-left cart-table-total-label"><strong>Voucher giảm giá: </strong></td>
+                                <td class="text-right cart-table-total">- @voucherValue.ToString("C0", new CultureInfo("vi-VN"))</td>
+                            </tr>
+                            <tr style="font-size:16px">
+                                <td class="text-left cart-table-total-label"><strong>Tổng thanh toán: </strong></td>
+                                @{
+                                    var totalPayment = totalOrder + @Model.DeliveryFee - voucherValue;
+                                    <td class="text-right cart-table-total">@totalPayment.ToString("C0", new CultureInfo("vi-VN"))</td>
+                                }
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

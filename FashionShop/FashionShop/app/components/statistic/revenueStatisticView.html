@@ -1,0 +1,161 @@
+﻿<div class="card-header">
+    <h3 class="card-title" style="font-size:30px">Thống kê</h3>
+</div>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-info">
+                    <div class="inner">
+                        <h3>{{countOrder}} </h3>
+
+                        <p>Đơn hàng</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <a ui-sref="order_list" class="small-box-footer">Xem thêm<i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-success">
+                    <div class="inner">
+                        <h3>{{countProduct}}</h3>
+
+                        <p>Sản phẩm</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <a ui-sref="product_list" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-warning">
+                    <div class="inner">
+                        <h3>{{countCustomer}}</h3>
+
+                        <p>Khách hàng</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <a ui-sref="customer_list" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-danger">
+                    <div class="inner">
+                        <h3>{{countVoucher}}</h3>
+
+                        <p>Mã giảm giá</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-ticket-simple"></i>
+                    </div>
+                    <a ui-sref="voucher_list" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+        </div>
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+            <!-- Left col -->
+            <section class="col-lg-7 connectedSortable">
+                <!-- Custom tabs (Charts with tabs)-->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-chart-pie mr-1"></i>
+                            Bảng thống kê đơn hàng theo ngày
+                        </h3>
+                        <!--<div class="card-tools">
+                            <ul class="nav nav-pills ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Area</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sales-chart" data-toggle="tab">Donut</a>
+                                </li>
+                            </ul>
+                        </div>-->
+                    </div><!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="tab-content no-padding">
+                            <!-- Morris chart - Sales -->
+                            <canvas id="bar" class="chart chart-bar"
+                                    chart-data="chartdata" chart-labels="labels" chart-series="series"></canvas>
+                        </div>
+                    </div><!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </section>
+            <!-- /.Left col -->
+            <!-- right col (We are only adding the ID to make the widgets sortable)-->
+            <section class="col-lg-5 connectedSortable">
+
+                <!-- Map card -->
+                <div class="card ">
+                    <div class="card-header border-0">
+                        <h3 class="card-title">
+                            <i class="fas fa-map-marker-alt mr-1"></i>
+                            Thống kê
+                        </h3>
+                        <!-- card tools -->
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-primary btn-sm daterange" title="Date range">
+                                <i class="far fa-calendar-alt"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary btn-sm" data-card-widget="collapse" title="Collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                        <!-- /.card-tools -->
+                    </div>
+                    <div class="card-body">
+                        <div id="world-map" style="height: 250px; width: 100%;">
+                            <table class="table table-bordered table-striped text-center">
+                                <thead>
+                                    <tr class="bg-gradient-dark">
+                                        <th>Ngày</th>
+                                        <th>Doanh thu</th>
+                                        <th>Lợi nhuận</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr ng-repeat="item in tableData">
+                                        <td>{{item.date | date: 'dd/MM/yyyy'}}</td>
+                                        <td>{{item.revenues | formatCurrencyVND}}</td>
+                                        <td>{{item.benefit | formatCurrencyVND}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                    <!-- /.card-body-->
+                    <!--<div class="card-footer bg-transparent">-->
+                        
+                        <!-- /.row -->
+                    <!--</div>-->
+                </div>
+                <!-- /.card -->
+            </section>
+            <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->

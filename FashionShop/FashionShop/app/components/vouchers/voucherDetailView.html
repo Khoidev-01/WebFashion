@@ -1,0 +1,87 @@
+﻿<div class="card">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size:30px">Chi tiết mã giảm giá - ID: {{voucher.id}}</h3>
+
+        <button type="button" class="btn btn-info float-right" ui-sref="voucher_list">Quay lại</button>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body" style="font-size: 20px">
+        <p>
+            <b>Mã giảm giá: </b>
+            {{voucher.discountCode}}
+        </p>
+
+        <p ng-show="voucher.discountAmount == true">
+            <b>Loại giảm giá: </b>
+            Giảm giá theo đ
+        </p>
+
+        <p ng-show="voucher.discountAmount == true">
+            <b>Số tiền giảm: </b>
+            {{voucher.discountValue | formatCurrencyVND}}
+        </p>
+
+        <p ng-show="voucher.discountPercentage == true">
+            <b>Loại giảm giá: </b>
+            Giảm giá theo %
+        </p>
+
+        <p ng-show="voucher.discountPercentage == true">
+            <b>Phần trăm giảm: </b>
+            {{voucher.discountValue}}%
+        </p>
+
+        <p>
+            <b>Đơn hàng tối thiểu: </b>
+            {{voucher.minimumValue | formatCurrencyVND}}
+        </p>
+
+        <p>
+            <b>Số lượng: </b>
+            {{voucher.quantity}}
+        </p>
+
+        <p>
+            <b>Ngày bắt đầu: </b>
+            {{voucher.startDate | date: 'dd/MM/yy HH:mm'}}
+        </p>
+
+        <p>
+            <b>Ngày kết thúc: </b>
+            {{voucher.endDate | date: 'dd/MM/yy HH:mm'}}
+        </p>
+
+        <p>
+            <b>Mô tả: </b>
+            {{voucher.describe}}
+        </p>
+
+
+        <p>
+            <b>Hiệu lực: </b>
+            <span ng-class="{'badge bg-gradient-green': voucher.status == true, 'badge bg-gradient-red': voucher.status == false}" style="font-size: 14px">{{voucher.status | lockFilter}}</span>
+        </p>
+
+        <p>
+            <b>Ngày tạo: </b>
+            {{voucher.createdDate | date: 'dd/MM/yy HH:mm'}}
+        </p>
+
+        <p>
+            <b>Tạo bởi: </b>
+            {{voucher.createdBy}}
+        </p>
+
+        <p>
+            <b>Ngày chỉnh sửa: </b>
+            {{voucher.updatedDate | date: 'dd/MM/yy HH:mm'}}
+        </p>
+
+        <p>
+            <b>Chỉnh sửa bởi: </b>
+            {{voucher.updatedBy}}
+        </p>
+
+    </div>
+</div>
+<!-- /.card-body -->

@@ -1,0 +1,82 @@
+﻿<div class="card">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size:30px">Danh sách sản phẩm</h3>
+
+        <button type="button" class="btn btn-success float-right" ui-sref="product_add">Thêm sản phẩm</button>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <div class="row">
+            <div class="col col-md-2">
+                <select name="category" class="form-control" id="category" ng-model="searchByCategory" ng-options="option.id as option.name for option in listCategories">
+                    <option value="">
+                        Tất cả danh mục
+                    </option>
+                </select>
+                <input type="hidden" name="category" ng-model="classify">
+            </div>
+
+            <div class="col col-md-5">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" ng-model="searchByName" placeholder="Nhập tên sản phẩm..." aria-label="Recipient's title" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" ng-click="getListProducts()">Tìm kiếm</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <table class="table table-bordered table-striped text-center">
+            <thead>
+                <tr class="bg-gradient-dark">
+                    <th style="width: 5%">ID</th>
+                    <th style="width: 25%">Tên sản phẩm</th>
+                    <th style="width: 10%">Hình ảnh</th>
+                    <th style="width: 10%">Danh mục</th>
+                    <th style="width: 10%">Giá</th>
+                    <th style="width: 10%">Số lượng</th>
+                    <th style="width: 10%">Ngày tạo</th>
+                    <th style="width: 10%">Trạng thái</th>
+                    <th style="width: 10%">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in listProducts">
+                    <td class="align-middle">{{product.id}}</td>
+                    <td class="align-middle">{{product.name}}</td>
+                    <td class="align-middle p-0">
+                        <img src="{{product.image}}" style="height: 100px" alt="Error Image" />
+                    </td>
+                    <td class="align-middle">{{product.categoryName}}</td>
+                    <td class="align-middle" ng-if="product.discount > 0">
+                        <span style="text-decoration: line-through; font-size: 80%">{{product.price | formatCurrencyVND}}</span>
+                        <span style="margin: 0 5px">{{product.price - (product.price * product.discount/100) | formatCurrencyVND}}</span>
+                        <span class="badge bg-gradient-warning">Giảm {{product.discount}}%</span>
+                    </td>
+                    <td class="align-middle" ng-if="product.discount <= 0">{{product.price | formatCurrencyVND}}</td>
+                    <td class="align-middle">{{product.quantity}}</td>
+                    <td class="align-middle text-center">{{product.createdDate | date: 'dd/MM/yyyy HH:mm:ss'}}</td>
+                    <td class="align-middle text-center">
+                        <span ng-class="{'badge bg-gradient-green': product.status == true, 'badge bg-gradient-red': product.status == false}" style="font-size: 14px">{{product.status | statusFilter}}</span>
+                    </td>
+                    <td class="align-middle text-center">
+                        <button class="btn btn-sm btn-primary mr-2" ui-sref="product_edit({id:product.id})">
+                            Sửa
+                        </button>
+                        <button class="btn btn-sm btn-danger" ng-click="deleteProduct(product.id)">
+                            Xóa
+                        </button>
+                        <button class="btn btn-sm btn-info mt-3" ui-sref="product_detail({id:product.id})">
+                            Xem chi tiết
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <pagination-directive show-to="{{showTo}}" show-from="{{showFrom}}" show-end="{{showEnd}}" page="{{page}}" custom-path="{{customPath}}" pages-count="{{pagesCount}}" total-count="{{totalCount}}" search-func="getListProducts(page)"></pagination-directive>
+</div>
+
+

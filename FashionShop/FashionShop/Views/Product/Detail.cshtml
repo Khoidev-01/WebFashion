@@ -1,0 +1,306 @@
+﻿@using FashionShop.Helper;
+@using FashionShop.Models.DTO.ProductDTO;
+@using FashionShop.Models.Domain;
+@using Newtonsoft.Json;
+@using System.Web;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@model GetProductByIdDTO
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string userJson = HttpContextAccessor.HttpContext.Session.GetString(CommonConstants.SessionUser);
+    User user = null;
+    if (userJson != null)
+    {
+        user = JsonConvert.DeserializeObject<User>(userJson);
+    }
+
+    double priceHasDiscount;
+}
+
+<div class="full-banner" style="height: 135px">
+</div>
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="~/Home"><i class="fa fa-home"></i></a></li>
+        <li><a href="single-product.html">Chi tiết sản phẩm</a></li>
+    </ul>
+    <div class="row">
+        <div class="col-sm-12" id="content">
+            <div class="row">
+                <div class="col-sm-7">
+                    <ul class="thumbnails main-front-image">
+                        <li class="product_img">
+                            <a class="thumbnail">
+                                <img src="~/@Model.Image" class="changeimg">
+                            </a>
+                        </li>
+                        <li class="image-additional">
+                            <a class="thumbnail">
+                                <img class="galleryimg" src="~/@Model.Image" width="93" height="133">
+                            </a>
+                        </li>
+                        @foreach (var img in @ViewBag.listImg)
+                        {
+                            <li class="image-additional">
+                                <a class="thumbnail">
+                                    <img class="galleryimg" src="~/@img" width="93" height="133">
+                                </a>
+                            </li>
+
+                        }
+
+                    </ul>
+                </div>
+                <div class="col-sm-5 col-xs-12 product-desc">
+                    @*<div class="rating-section product-rating-status">
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                    <a class="review-link review-link-show">0 reviews</a>
+                    <a class="review-link review-link-show">Write a review</a>
+                    </div>*@
+
+                    @if (@Model.Discount > 0)
+                    {
+                        <h2>@Model.Name</h2>
+
+                        <div class="price-section">
+
+                            <span class="price-p" style="text-decoration: line-through; font-size: 20px; margin-right: 10px; color: #929292;">
+                                @Html.Raw(Model.Price.ToString("N0") + "đ")
+                            </span>
+
+                            <span class="price-p" style="font-size: 25px">
+                                @{
+                                    priceHasDiscount = Model.Price - (Model.Price * Model.Discount / 100);
+                                }
+                                @Html.Raw(priceHasDiscount.ToString("N0") + "đ")
+                            </span>
+
+                            <span class="price-left">@Model.Discount %</span>
+
+                        </div>
+                        <ul class="list-unstyled product-section" style="font-size: 25px">
+                            <li style="font-size: 20px !important"><span>Số lượng có sẵn:</span> @Model.Quantity</li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <h2>@Model.Name</h2>
+
+                        <div class="price-section">
+
+                            <span class="price-p" style="font-size: 25px">
+                                @Html.Raw(Model.Price.ToString("N0") + "đ")
+                            </span>
+                        </div>
+                        <ul class="list-unstyled product-section" style="font-size: 25px">
+                            <li style="font-size: 20px !important"><span>Số lượng có sẵn: </span> @Model.Quantity</li>
+                        </ul>
+                    }
+
+                    <div id="product">
+                        <div class="row" style="display: flex; justify-content: end;">
+                            <div class="col-sm-3">
+                                <label for="input-quantity" class="control-label" style="line-height: 34px;">Số lượng</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control" id="input-quantity" data-id="@Model.ID" size="2" value="1" min="1" name="quantity">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3 margin-top product-button">
+                                <button class="btnAddProductFavorite" type="button" data-id="@Model.ID">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-sm-9">
+                                <a class="margin-top btn btn-primary btn-lg btn-block btn-5 btn-5a icon-cart btnAddToCartInDetail" data-id="@Model.ID" id="button-cart">
+                                    <span>Thêm vào giỏ hàng</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix margin-top"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="product-tab-part">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#tab-review">Bình luận (@ViewBag.SumComment)</a></li>
+                    <li><a data-toggle="tab" href="#tab-description">Mô tả</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-review" class="tab-pane active">
+                        <ol id="comment_reload" style="list-style: none; padding-left: 3px;">
+                            @foreach (var itemComment in ViewBag.ListComment)
+                            {
+                                if (itemComment.ParentID == 0)
+                                {
+                                    <li class="comment" style="display: flex; margin-bottom: 25px;">
+                                        <div class="avatar-image-container" style="padding-right: 15px;">
+                                            <img src="/assets/admin/img/avatar6.jpeg" alt="" style="max-width: 36px; border: 1px solid #ccc;">
+                                        </div>
+                                        <div class="comment-block">
+                                            <div class="comment-header">
+                                                <span class="user" style="margin-right: 20px;">
+                                                    <b>@itemComment.FullName</b>
+                                                </span>
+                                                <span class="icon user blog-author"></span>
+                                                <span class="datetime secondary-text">
+                                                    @itemComment.CreatedDate.ToString("dd/MM/yyyy hh:mm tt")
+                                                </span>
+                                            </div>
+                                            <p class="comment-content" style="margin: 5px 0;">@itemComment.Content</p>
+
+                                            @if (user != null)
+                                            {
+                                                <div class="comment-actions secondary-text" style="width: 450px">
+
+                                                    <div id="commentreply-@itemComment.ID" class="bg-light collapse">
+                                                        <textarea name="" class="form-control" id="txtCommentMsg_@itemComment.ID" placeholder="Viết bình luận"></textarea>
+                                                        <button type="submit" class="btn btn-primary btnReply" data-productid="@itemComment.ProductID" data-userid="@user.Id" data-parentid="@itemComment.ID" data-commentmsg="txtCommentMsg_@itemComment.ID">Bình luận</button>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </li>
+
+                                    <div style="margin-left: 25px">
+                                        @Html.Partial("_ChildComment", new {parentID = itemComment.ID , productID = itemComment.ProductID})
+                                    </div>
+                                }
+
+                            }
+
+                        </ol>
+                        @if (user != null)
+                        {
+                            <div>
+                                <textarea name="" class="form-control" id="txtCommentNew" placeholder="Viết bình luận"></textarea>
+                                <button type="submit" class="btn btn-primary" style="margin-top: 15px;" id="btnCommentNew" data-productid="@Model.ID" data-userid="@user.Id">Bình luận</button>
+                            </div>
+                        }
+                        else
+                        {
+                            <div>
+                                <a class="btn btn-primary" href="~/Account/Login">Đăng nhập để bình luận</a>
+                            </div>
+                        }
+                    </div>
+                    <div id="tab-description" class="tab-pane">
+                        @Html.Raw(HttpUtility.HtmlDecode(@Model.Describe))
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row featured-block">
+        <div class="main-head-block">
+            <h3>Sản phẩm liên quan</h3>
+        </div>
+        @foreach (var pro in @ViewBag.SanPham)
+        {
+            decimal price = Convert.ToDecimal(@pro.Price);
+            decimal discount = Convert.ToDecimal(@pro.Discount);
+            decimal discountedPrice = price - (price * discount / 100);
+            string formattedPrice = price.ToString("N0") + "đ";
+            string formattedPriceHasDiscount = discountedPrice.ToString("N0") + "đ";
+
+            if (pro.Discount > 0)
+            {
+                <div class="col-md-2 col-sm-6 col-xs-6 mb-30 width-100">
+                    <div class="product-thumb effect-shadow">
+                        <div class="product-view-block">
+                            <div class="button-block">
+                                <a class="btnAddProductFavorite" data-id="@pro.ID"> <i class="fa fa-heart"></i></a>
+                                @*<a><i class="fa fa-random" aria-hidden="true"></i></a>*@
+                                <a href="javascript:void(0);" class="btnAddToCart" data-id="@pro.ID"><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                            <div class="price-view-block">
+                                <span class="price-left">@pro.Discount%</span>
+                            </div>
+
+                            <div class="image-block">
+                                <a href="single-product.html" style="cursor: pointer">
+                                    <img class="img-responsive" alt="i" src="/@pro.Image">
+                                </a>
+                            </div>
+
+
+                            <div style="margin: 0px 5px;text-align: center;">
+                                <p class="m-0">
+                                    @pro.Name
+                                </p>
+
+                                <span style="text-decoration: line-through; font-size: 80%; margin-right: 5px">
+                                    @formattedPrice
+                                </span>
+
+                                <span>
+                                    @formattedPriceHasDiscount
+                                </span>
+                            </div>
+                            <div class="effect-shadow">
+                                <a href="~/Product/Detail/@pro.ID" style="display: block; width: 100%; height: 100%;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="col-md-2 col-sm-6 col-xs-6 mb-30 width-100">
+                    <div class="product-thumb effect-shadow">
+                        <div class="product-view-block">
+                            <div class="button-block">
+                                <a class="btnAddProductFavorite" data-id="@pro.ID"> <i class="fa fa-heart"></i></a>
+                                @*<a><i class="fa fa-random" aria-hidden="true"></i></a>*@
+                                <a href="javascript:void(0);" class="btnAddToCart" data-id="@pro.ID"><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                            <div class="image-block">
+                                <a href="single-product.html" style="cursor: pointer">
+                                    <img class="img-responsive" alt="i" src="/@pro.Image">
+                                </a>
+                            </div>
+                            <div style="margin: 0px 5px;text-align: center;">
+                                <p class="m-0">
+                                    @pro.Name
+                                </p>
+                                <span>
+                                    @formattedPrice
+                                </span>
+                            </div>
+                            <div class="effect-shadow">
+                                <a href="~/Product/Detail/@pro.ID" style="display: block; width: 100%; height: 100%;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+</div>
+
+@section script{
+    <script>
+        $("document").ready(function () {
+
+            $(".galleryimg").on("click", function () {
+                var src = $(this).attr('src');
+                $(".changeimg").attr('src', src);
+            });
+        });
+    </script>
+
+}
+

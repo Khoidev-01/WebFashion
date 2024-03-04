@@ -1,0 +1,10 @@
+﻿@model List<FashionShop.Models.DTO.CategoryDTO>
+
+<ul class="product_item">
+    @foreach(var category in Model)
+    {
+        <li>
+            <a href="~/Product/Index/?idCategory=@category.ID">@category.Name</a>
+        </li>
+    }
+</ul>

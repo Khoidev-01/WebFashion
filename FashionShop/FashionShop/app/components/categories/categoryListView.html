@@ -1,0 +1,34 @@
+﻿<div class="card">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size:30px">Danh sách danh mục sản phẩm</h3>
+
+        <button type="button" class="btn btn-success float-right" ui-sref="category_add">Thêm danh mục</button>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table class="table table-bordered table-striped text-center">
+            <thead>
+                <tr class="bg-gradient-dark">
+                    <th style="width: 20%">ID</th>
+                    <th style="width: 60%">Tên danh mục</th>
+                    <th style="width: 20%">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="category in listCategories">
+                    <td>{{category.id}}</td>
+                    <td>{{category.name}}</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary mr-3" ui-sref="category_edit({id:category.id})">
+                            Sửa
+                        </button>
+                        <button class="btn btn-sm btn-danger" ng-click="deleteCategory(category.id)">
+                            Xóa
+                        </button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>

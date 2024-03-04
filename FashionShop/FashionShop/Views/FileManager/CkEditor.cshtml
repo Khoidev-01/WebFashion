@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html class="h-100">
+<head>
+    <meta charset="utf-8" />
+    <title>File Manager</title>
+
+    <link href="~/assets/admin/libs/jqueryui/themes/base/theme.css" rel="stylesheet" />
+    <link href="~/assets/admin/libs/jqueryui/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="~/assets/admin/libs/elfinder/css/elfinder.full.css" rel="stylesheet" />
+    <link href="~/assets/admin/libs/elfinder/css/theme.css" rel="stylesheet" />
+
+    <script src="~/assets/admin/libs/jquery/jquery.min.js"></script>
+    <script src="~/assets/admin/libs/jqueryui/jquery-ui.js"></script>
+    <script src="~/assets/admin/libs/elfinder/js/elfinder.min.js"></script>
+
+</head>
+<body class="h-100">
+    <div id="elfinder" class="h-100"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#elfinder').elfinder({
+                // Connector URL
+                url: "@Url.Action("Connector")",
+                height: '100%',
+                // Callback when a file is double-clicked
+                getFileCallback: function (file, fm) {
+                    window.opener.CKEDITOR.tools.callFunction((function () {
+                        var reParam = new RegExp('(?:[\?&]|&amp;)CKEditorFuncNum=([^&]+)', 'i');
+                        var match = window.location.search.match(reParam);
+                        return (match && match.length > 1) ? match[1] : '';
+                    })(), fm.convAbsUrl(file.url));
+                    fm.destroy();
+                    window.close();
+                }
+            }).elfinder('instance');
+
+        });
+
+    </script>
+</body>
+</html>

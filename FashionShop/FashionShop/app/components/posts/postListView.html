@@ -1,0 +1,56 @@
+﻿<div class="card">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size:30px">Danh sách bài viết</h3>
+
+        <button type="button" class="btn btn-success float-right" ui-sref="post_add">Thêm bài viết</button>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <div class="row">
+            <div class="col col-md-5">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Nhập tiêu đề bài viết..." aria-label="Recipient's title" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Tìm kiếm</button>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-bordered table-striped text-center">
+                <thead>
+                    <tr class="bg-gradient-dark">
+                        <th style="width: 5%">ID</th>
+                        <th style="width: 15%">Tiêu đề bài viết</th>
+                        <th style="width: 10%">Hình ảnh</th>
+                        <th style="width: 50%">Nội dung</th>
+                        <th style="width: 10%">Trạng thái</th>
+                        <th style="width: 10%">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="post in listPosts">
+                        <td>{{post.id}}</td>
+                        <td>{{post.title}}</td>
+                        <td><img src="{{post.image}}" style="width: 100px; height: 50px" alt="Error Image" /></td>
+                        <td>{{post.content}}</td>
+                        <td>
+                            <span ng-class="{'badge bg-gradient-green': post.status == true, 'badge bg-gradient-red': post.status == false}" style="font-size: 14px">{{post.status | statusFilter}}</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-primary mr-3" ui-sref="post_edit({id:post.id})">
+                                <i class="fa fa-pen"></i>
+                            </button>
+                            <button class="btn btn-sm btn-danger" ng-click="deletePost(post.id)">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+

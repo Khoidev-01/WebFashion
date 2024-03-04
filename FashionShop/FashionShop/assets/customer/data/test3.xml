@@ -1,0 +1,1119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Item id="" type="" value=""></Item>
+
+	<Item id="811" type="province" value="Bến Tre">
+		<Item id="81113" type="district" value="Huyện Ba Tri">
+			<Item id="8111319" type="ward" value="Thị trấn Ba Tri"/>
+			<Item id="8111335" type="ward" value="Xã An Bình Tây"/>
+			<Item id="8111341" type="ward" value="Xã An Hiệp"/>
+			<Item id="8111317" type="ward" value="Xã An Hòa Tây"/>
+			<Item id="8111333" type="ward" value="Xã An Ngãi Trung"/>
+			<Item id="8111339" type="ward" value="Xã An Ngãi Tây"/>
+			<Item id="8111309" type="ward" value="Xã An Phú Trung"/>
+			<Item id="8111305" type="ward" value="Xã An Thủy"/>
+			<Item id="8111347" type="ward" value="Xã An Đức"/>
+			<Item id="8111313" type="ward" value="Xã Bảo Thuận"/>
+			<Item id="8111325" type="ward" value="Xã Bảo Thạnh"/>
+			<Item id="8111323" type="ward" value="Xã Mỹ Chánh"/>
+			<Item id="8111307" type="ward" value="Xã Mỹ Hòa"/>
+			<Item id="8111329" type="ward" value="Xã Mỹ Nhơn"/>
+			<Item id="8111327" type="ward" value="Xã Mỹ Thạnh"/>
+			<Item id="8111303" type="ward" value="Xã Phú Lễ"/>
+			<Item id="8111311" type="ward" value="Xã Phú Ngãi"/>
+			<Item id="8111331" type="ward" value="Xã Phước Tuy"/>
+			<Item id="8111337" type="ward" value="Xã Tân Hưng"/>
+			<Item id="8111301" type="ward" value="Xã Tân Mỹ"/>
+			<Item id="8111343" type="ward" value="Xã Tân Thủy"/>
+			<Item id="8111321" type="ward" value="Xã Tân Xuân"/>
+			<Item id="8111345" type="ward" value="Xã Vĩnh An"/>
+			<Item id="8111315" type="ward" value="Xã Vĩnh Hòa"/>
+		</Item>
+		<Item id="81111" type="district" value="Huyện Bình Đại">
+			<Item id="8111113" type="ward" value="Thị trấn Bình Đại"/>
+			<Item id="8111107" type="ward" value="Xã Bình Thắng"/>
+			<Item id="8111129" type="ward" value="Xã Bình Thới"/>
+			<Item id="8111123" type="ward" value="Xã Châu Hưng"/>
+			<Item id="8111117" type="ward" value="Xã Long Hòa"/>
+			<Item id="8111115" type="ward" value="Xã Long Định"/>
+			<Item id="8111101" type="ward" value="Xã Lộc Thuận"/>
+			<Item id="8111131" type="ward" value="Xã Phú Long"/>
+			<Item id="8111119" type="ward" value="Xã Phú Thuận"/>
+			<Item id="8111125" type="ward" value="Xã Phú Vang"/>
+			<Item id="8111111" type="ward" value="Xã Tam Hiệp"/>
+			<Item id="8111109" type="ward" value="Xã Thạnh Phước"/>
+			<Item id="8111133" type="ward" value="Xã Thạnh Trị"/>
+			<Item id="8111127" type="ward" value="Xã Thới Lai"/>
+			<Item id="8111139" type="ward" value="Xã Thới Thuận"/>
+			<Item id="8111137" type="ward" value="Xã Thừa Đức"/>
+			<Item id="8111103" type="ward" value="Xã Vang Quới Tây"/>
+			<Item id="8111121" type="ward" value="Xã Vang Quới Đông"/>
+			<Item id="8111135" type="ward" value="Xã Đại Hòa Lộc"/>
+			<Item id="8111105" type="ward" value="Xã Định Trung"/>
+		</Item>
+		<Item id="81103" type="district" value="Huyện Châu Thành">
+			<Item id="8110317" type="ward" value="Thị trấn Châu Thành"/>
+			<Item id="8110303" type="ward" value="Xã An Hiệp"/>
+			<Item id="8110339" type="ward" value="Xã An Hóa"/>
+			<Item id="8110321" type="ward" value="Xã An Khánh"/>
+			<Item id="8110309" type="ward" value="Xã An Phước"/>
+			<Item id="8110307" type="ward" value="Xã Giao Hòa"/>
+			<Item id="8110323" type="ward" value="Xã Giao Long"/>
+			<Item id="8110341" type="ward" value="Xã Hữu Định"/>
+			<Item id="8110345" type="ward" value="Xã Mỹ Thành"/>
+			<Item id="8110327" type="ward" value="Xã Phú An Hòa"/>
+			<Item id="8110325" type="ward" value="Xã Phú Túc"/>
+			<Item id="8110301" type="ward" value="Xã Phú Đức"/>
+			<Item id="8110337" type="ward" value="Xã Phước Thạnh"/>
+			<Item id="8110335" type="ward" value="Xã Quới Thành"/>
+			<Item id="8110319" type="ward" value="Xã Qưới Sơn"/>
+			<Item id="8110315" type="ward" value="Xã Sơn Hòa"/>
+			<Item id="8110329" type="ward" value="Xã Tam Phước"/>
+			<Item id="8110331" type="ward" value="Xã Thành Triệu"/>
+			<Item id="8110313" type="ward" value="Xã Tiên Long"/>
+			<Item id="8110343" type="ward" value="Xã Tiên Thủy"/>
+			<Item id="8110311" type="ward" value="Xã Tân Phú"/>
+			<Item id="8110305" type="ward" value="Xã Tân Thạch"/>
+			<Item id="8110333" type="ward" value="Xã Tường Đa"/>
+		</Item>
+		<Item id="81105" type="district" value="Huyện Chợ Lách">
+			<Item id="8110509" type="ward" value="Thị trấn Chợ Lách"/>
+			<Item id="8110515" type="ward" value="Xã Hòa Nghĩa"/>
+			<Item id="8110521" type="ward" value="Xã Hưng Khánh Trung B"/>
+			<Item id="8110505" type="ward" value="Xã Long Thới"/>
+			<Item id="8110503" type="ward" value="Xã Phú Phụng"/>
+			<Item id="8110517" type="ward" value="Xã Phú Sơn"/>
+			<Item id="8110511" type="ward" value="Xã Sơn Định"/>
+			<Item id="8110501" type="ward" value="Xã Tân Thiềng"/>
+			<Item id="8110513" type="ward" value="Xã Vĩnh Bình"/>
+			<Item id="8110507" type="ward" value="Xã Vĩnh Hòa"/>
+			<Item id="8110519" type="ward" value="Xã Vĩnh Thành"/>
+		</Item>
+		<Item id="81109" type="district" value="Huyện Giồng Trôm">
+			<Item id="8110943" type="ward" value="Thị trấn Giồng Trôm"/>
+			<Item id="8110905" type="ward" value="Xã Bình Hoà"/>
+			<Item id="8110935" type="ward" value="Xã Bình Thành"/>
+			<Item id="8110923" type="ward" value="Xã Châu Bình"/>
+			<Item id="8110917" type="ward" value="Xã Châu Hòa"/>
+			<Item id="8110941" type="ward" value="Xã Hưng Lễ"/>
+			<Item id="8110939" type="ward" value="Xã Hưng Nhượng"/>
+			<Item id="8110931" type="ward" value="Xã Hưng Phong"/>
+			<Item id="8110933" type="ward" value="Xã Long Mỹ"/>
+			<Item id="8110919" type="ward" value="Xã Lương Hòa"/>
+			<Item id="8110901" type="ward" value="Xã Lương Phú"/>
+			<Item id="8110921" type="ward" value="Xã Lương Quới"/>
+			<Item id="8110915" type="ward" value="Xã Mỹ Thạnh"/>
+			<Item id="8110913" type="ward" value="Xã Phong Mỹ"/>
+			<Item id="8110911" type="ward" value="Xã Phong Nẫm"/>
+			<Item id="8110929" type="ward" value="Xã Phước Long"/>
+			<Item id="8110927" type="ward" value="Xã Sơn Phú"/>
+			<Item id="8110925" type="ward" value="Xã Thuận Điền"/>
+			<Item id="8110909" type="ward" value="Xã Thạnh Phú Đông"/>
+			<Item id="8110907" type="ward" value="Xã Tân Hào"/>
+			<Item id="8110903" type="ward" value="Xã Tân Lợi Thạnh"/>
+			<Item id="8110937" type="ward" value="Xã Tân Thanh"/>
+		</Item>
+		<Item id="81108" type="district" value="Huyện Mỏ Cày Bắc">
+			<Item id="8110819" type="ward" value="Xã Hòa Lộc"/>
+			<Item id="8110823" type="ward" value="Xã Hưng Khánh Trung A"/>
+			<Item id="8110821" type="ward" value="Xã Khánh Thạnh Tân"/>
+			<Item id="8110817" type="ward" value="Xã Nhuận Phú Tân"/>
+			<Item id="8110825" type="ward" value="Xã Phú Mỹ"/>
+			<Item id="8110811" type="ward" value="Xã Phước Mỹ Trung"/>
+			<Item id="8110801" type="ward" value="Xã Thanh Tân"/>
+			<Item id="8110809" type="ward" value="Xã Thành An"/>
+			<Item id="8110803" type="ward" value="Xã Thạnh Ngãi"/>
+			<Item id="8110815" type="ward" value="Xã Tân Bình"/>
+			<Item id="8110805" type="ward" value="Xã Tân Phú Tây"/>
+			<Item id="8110813" type="ward" value="Xã Tân Thanh Tây"/>
+			<Item id="8110807" type="ward" value="Xã Tân Thành Bình"/>
+		</Item>
+		<Item id="81107" type="district" value="Huyện Mỏ Cày Nam">
+			<Item id="8110717" type="ward" value="Thị trấn Mỏ Cày"/>
+			<Item id="8110739" type="ward" value="Xã An Thạnh"/>
+			<Item id="8110703" type="ward" value="Xã An Thới"/>
+			<Item id="8110743" type="ward" value="Xã An Định"/>
+			<Item id="8110741" type="ward" value="Xã Bình Khánh Tây"/>
+			<Item id="8110711" type="ward" value="Xã Bình Khánh Đông"/>
+			<Item id="8110751" type="ward" value="Xã Cẩm Sơn"/>
+			<Item id="8110753" type="ward" value="Xã Hương Mỹ"/>
+			<Item id="8110715" type="ward" value="Xã Minh Đức"/>
+			<Item id="8110749" type="ward" value="Xã Ngãi Đăng"/>
+			<Item id="8110735" type="ward" value="Xã Phước Hiệp"/>
+			<Item id="8110747" type="ward" value="Xã Thành Thới A"/>
+			<Item id="8110713" type="ward" value="Xã Thành Thới B"/>
+			<Item id="8110755" type="ward" value="Xã Tân Hội"/>
+			<Item id="8110745" type="ward" value="Xã Tân Trung"/>
+			<Item id="8110733" type="ward" value="Xã Đa Phước Hội"/>
+			<Item id="8110729" type="ward" value="Xã Định Thủy"/>
+		</Item>
+		<Item id="81115" type="district" value="Huyện Thạnh Phú">
+			<Item id="8111511" type="ward" value="Thị trấn Thạnh Phú"/>
+			<Item id="8111509" type="ward" value="Xã An Nhơn"/>
+			<Item id="8111527" type="ward" value="Xã An Quy"/>
+			<Item id="8111501" type="ward" value="Xã An Thuận"/>
+			<Item id="8111505" type="ward" value="Xã An Thạnh"/>
+			<Item id="8111525" type="ward" value="Xã An Điền"/>
+			<Item id="8111507" type="ward" value="Xã Bình Thạnh"/>
+			<Item id="8111531" type="ward" value="Xã Giao Thạnh"/>
+			<Item id="8111523" type="ward" value="Xã Hòa Lợi"/>
+			<Item id="8111535" type="ward" value="Xã Mỹ An"/>
+			<Item id="8111519" type="ward" value="Xã Mỹ Hưng"/>
+			<Item id="8111513" type="ward" value="Xã Phú Khánh"/>
+			<Item id="8111515" type="ward" value="Xã Quới Điền"/>
+			<Item id="8111529" type="ward" value="Xã Thạnh Hải"/>
+			<Item id="8111533" type="ward" value="Xã Thạnh Phong"/>
+			<Item id="8111521" type="ward" value="Xã Thới Thạnh"/>
+			<Item id="8111517" type="ward" value="Xã Tân Phong"/>
+			<Item id="8111503" type="ward" value="Xã Đại Điền"/>
+		</Item>
+		<Item id="81101" type="district" value="Thị xã Bến Tre">
+			<Item id="8110105" type="ward" value="Phường 1"/>
+			<Item id="8110121" type="ward" value="Phường 2"/>
+			<Item id="8110119" type="ward" value="Phường 3"/>
+			<Item id="8110115" type="ward" value="Phường 4"/>
+			<Item id="8110117" type="ward" value="Phường 5"/>
+			<Item id="8110113" type="ward" value="Phường 6"/>
+			<Item id="8110107" type="ward" value="Phường 7"/>
+			<Item id="8110103" type="ward" value="Phường 8"/>
+			<Item id="8110111" type="ward" value="Phường Phú Khương"/>
+			<Item id="8110131" type="ward" value="Phường Phú Tân"/>
+			<Item id="8110125" type="ward" value="Xã Bình Phú"/>
+			<Item id="8110109" type="ward" value="Xã Mỹ Thạnh An"/>
+			<Item id="8110127" type="ward" value="Xã Nhơn Thạnh"/>
+			<Item id="8110101" type="ward" value="Xã Phú Hưng"/>
+			<Item id="8110129" type="ward" value="Xã Phú Nhuận"/>
+			<Item id="8110123" type="ward" value="Xã Sơn Đông"/>
+		</Item>
+	</Item>
+	<Item id="203" type="province" value="Cao Bằng">
+		<Item id="20323" type="district" value="Huyện Bảo Lâm">
+			<Item id="2022827" type="ward" value="Thị trấn Pác Miầu"/>
+			<Item id="2032301" type="ward" value="Xã Lý Bôn"/>
+			<Item id="2032311" type="ward" value="Xã Mông ân"/>
+			<Item id="2024725" type="ward" value="Xã Nam Cao"/>
+			<Item id="2032303" type="ward" value="Xã Nam Quang"/>
+			<Item id="2032317" type="ward" value="Xã Quảng Lâm"/>
+			<Item id="2030419" type="ward" value="Xã Thái Học"/>
+			<Item id="2026623" type="ward" value="Xã Thái Sơn"/>
+			<Item id="2028521" type="ward" value="Xã Thạch Lâm"/>
+			<Item id="2032307" type="ward" value="Xã Tân Việt"/>
+			<Item id="2032309" type="ward" value="Xã Vĩnh Phong"/>
+			<Item id="2032305" type="ward" value="Xã Vĩnh Quang"/>
+			<Item id="2032313" type="ward" value="Xã Yên Thổ"/>
+			<Item id="2032315" type="ward" value="Xã Đức Hạnh"/>
+		</Item>
+		<Item id="20303" type="district" value="Huyện Bảo Lạc">
+			<Item id="2030319" type="ward" value="Thị trấn Bảo Lạc"/>
+			<Item id="2030305" type="ward" value="Xã Bảo Toàn"/>
+			<Item id="2030303" type="ward" value="Xã Cô Ba"/>
+			<Item id="2030301" type="ward" value="Xã Cốc Pàng"/>
+			<Item id="2030315" type="ward" value="Xã Huy Giáp"/>
+			<Item id="2030329" type="ward" value="Xã Hưng Thịnh"/>
+			<Item id="2030327" type="ward" value="Xã Hưng Đạo"/>
+			<Item id="2030313" type="ward" value="Xã Hồng An"/>
+			<Item id="2030309" type="ward" value="Xã Hồng Trị"/>
+			<Item id="2030307" type="ward" value="Xã Khánh Xuân"/>
+			<Item id="2030331" type="ward" value="Xã Kim Cúc"/>
+			<Item id="2030311" type="ward" value="Xã Phan Thanh"/>
+			<Item id="2030333" type="ward" value="Xã Sơn Lập"/>
+			<Item id="2030321" type="ward" value="Xã Sơn Lộ"/>
+			<Item id="2030323" type="ward" value="Xã Thượng Hà"/>
+			<Item id="2030325" type="ward" value="Xã Xuân Trường"/>
+			<Item id="2030317" type="ward" value="Xã Đình Phùng"/>
+		</Item>
+		<Item id="20315" type="district" value="Huyện Hoà An">
+			<Item id="2031537" type="ward" value="Thị trấn Nước Hai"/>
+			<Item id="2031525" type="ward" value="Xã Bình Dương"/>
+			<Item id="2031541" type="ward" value="Xã Bình Long"/>
+			<Item id="2031523" type="ward" value="Xã Bạch Đằng"/>
+			<Item id="2031543" type="ward" value="Xã Bế Triều"/>
+			<Item id="2031513" type="ward" value="Xã Công Trừng"/>
+			<Item id="2031533" type="ward" value="Xã Dân Chủ"/>
+			<Item id="2031517" type="ward" value="Xã Hoàng Tung"/>
+			<Item id="2031547" type="ward" value="Xã Hà Trì"/>
+			<Item id="2031531" type="ward" value="Xã Hồng Nam"/>
+			<Item id="2031515" type="ward" value="Xã Hồng Việt"/>
+			<Item id="2031527" type="ward" value="Xã Lê Chung"/>
+			<Item id="2031501" type="ward" value="Xã Nam Tuấn"/>
+			<Item id="2031511" type="ward" value="Xã Nguyễn Huệ"/>
+			<Item id="2031507" type="ward" value="Xã Ngũ Lão"/>
+			<Item id="2031545" type="ward" value="Xã Quang Trung"/>
+			<Item id="2031519" type="ward" value="Xã Trưng Vương"/>
+			<Item id="2031509" type="ward" value="Xã Trương Lương"/>
+			<Item id="2031505" type="ward" value="Xã Đại Tiến"/>
+			<Item id="2031539" type="ward" value="Xã Đức Long"/>
+			<Item id="2031503" type="ward" value="Xã Đức Xuân"/>
+		</Item>
+		<Item id="20305" type="district" value="Huyện Hà Quảng">
+			<Item id="2030505" type="ward" value="Xã Cải Viên"/>
+			<Item id="2030523" type="ward" value="Xã Hạ Thôn"/>
+			<Item id="2030533" type="ward" value="Xã Hồng Sĩ"/>
+			<Item id="2030501" type="ward" value="Xã Kéo Yên"/>
+			<Item id="2030525" type="ward" value="Xã Lũng Nặm"/>
+			<Item id="2030535" type="ward" value="Xã Mã Ba"/>
+			<Item id="2030507" type="ward" value="Xã Nà Sác"/>
+			<Item id="2030509" type="ward" value="Xã Nội Thôn"/>
+			<Item id="2030519" type="ward" value="Xã Phù Ngọc"/>
+			<Item id="2030517" type="ward" value="Xã Quý Quân"/>
+			<Item id="2030511" type="ward" value="Xã Sóc Hà"/>
+			<Item id="2030527" type="ward" value="Xã Sĩ Hai"/>
+			<Item id="2030513" type="ward" value="Xã Thượng Thôn"/>
+			<Item id="2030503" type="ward" value="Xã Trường Hà"/>
+			<Item id="2030531" type="ward" value="Xã Tổng Cọt"/>
+			<Item id="2030529" type="ward" value="Xã Vân An"/>
+			<Item id="2030537" type="ward" value="Xã Vần Dính"/>
+			<Item id="2030515" type="ward" value="Xã Xuân Hoà"/>
+			<Item id="2030521" type="ward" value="Xã Đào Ngạn"/>
+		</Item>
+		<Item id="20319" type="district" value="Huyện Hạ Lang">
+			<Item id="2031911" type="ward" value="Thị trấn Thanh Nhật"/>
+			<Item id="2031925" type="ward" value="Xã An Lạc"/>
+			<Item id="2031915" type="ward" value="Xã Cô Ngân"/>
+			<Item id="2031921" type="ward" value="Xã Kim Loan"/>
+			<Item id="2031903" type="ward" value="Xã Lý Quốc"/>
+			<Item id="2031901" type="ward" value="Xã Minh Long"/>
+			<Item id="2031909" type="ward" value="Xã Quang Long"/>
+			<Item id="2031917" type="ward" value="Xã Thái Đức"/>
+			<Item id="2031905" type="ward" value="Xã Thắng Lợi"/>
+			<Item id="2031919" type="ward" value="Xã Thị Hoa"/>
+			<Item id="2031913" type="ward" value="Xã Vinh Quý"/>
+			<Item id="2031927" type="ward" value="Xã Việt Chu"/>
+			<Item id="2031923" type="ward" value="Xã Đồng Loan"/>
+			<Item id="2031907" type="ward" value="Xã Đức Quang"/>
+		</Item>
+		<Item id="20313" type="district" value="Huyện Nguyên Bình">
+			<Item id="2031335" type="ward" value="Thị trấn Nguyên Bình"/>
+			<Item id="2031327" type="ward" value="Thị trấn Tĩnh Túc"/>
+			<Item id="2031339" type="ward" value="Xã Bắc Hợp"/>
+			<Item id="2031305" type="ward" value="Xã Ca Thành"/>
+			<Item id="2031333" type="ward" value="Xã Hoa Thám"/>
+			<Item id="2031325" type="ward" value="Xã Hưng Đạo"/>
+			<Item id="2031315" type="ward" value="Xã Lang Môn"/>
+			<Item id="2031313" type="ward" value="Xã Mai Long"/>
+			<Item id="2031317" type="ward" value="Xã Minh Thanh"/>
+			<Item id="2031309" type="ward" value="Xã Minh Tâm"/>
+			<Item id="2031329" type="ward" value="Xã Phan Thanh"/>
+			<Item id="2031319" type="ward" value="Xã Quang Thành"/>
+			<Item id="2031321" type="ward" value="Xã Tam Kim"/>
+			<Item id="2031331" type="ward" value="Xã Thành Công"/>
+			<Item id="2031337" type="ward" value="Xã Thái Học"/>
+			<Item id="2031311" type="ward" value="Xã Thể Dục"/>
+			<Item id="2031323" type="ward" value="Xã Thịnh Vượng"/>
+			<Item id="2031303" type="ward" value="Xã Triệu Nguyên"/>
+			<Item id="2031307" type="ward" value="Xã Vũ Nông"/>
+			<Item id="2031301" type="ward" value="Xã Yên Lạc"/>
+		</Item>
+		<Item id="20318" type="district" value="Huyện Phục Hoà">
+			<Item id="2031811" type="ward" value="Thị Trấn Hòa Thuận"/>
+			<Item id="2031815" type="ward" value="Thị trấn Tà Lùng"/>
+			<Item id="2031805" type="ward" value="Xã Cách Linh"/>
+			<Item id="2031803" type="ward" value="Xã Hồng Đại"/>
+			<Item id="2031817" type="ward" value="Xã Lương Thiện"/>
+			<Item id="2031813" type="ward" value="Xã Mỹ Hưng"/>
+			<Item id="2031809" type="ward" value="Xã Tiên Thành"/>
+			<Item id="2031801" type="ward" value="Xã Triệu ẩu"/>
+			<Item id="2031807" type="ward" value="Xã Đại Sơn"/>
+		</Item>
+		<Item id="20317" type="district" value="Huyện Quảng Uyên">
+			<Item id="2031727" type="ward" value="Thị trấn Quảng Uyên"/>
+			<Item id="2031723" type="ward" value="Xã Bình Lăng"/>
+			<Item id="2031709" type="ward" value="Xã Cai Bộ"/>
+			<Item id="2031713" type="ward" value="Xã Chí Thảo"/>
+			<Item id="2031725" type="ward" value="Xã Hoàng Hải"/>
+			<Item id="2031721" type="ward" value="Xã Hạnh Phúc"/>
+			<Item id="2031733" type="ward" value="Xã Hồng Quang"/>
+			<Item id="2031717" type="ward" value="Xã Hồng Định"/>
+			<Item id="2031719" type="ward" value="Xã Ngọc Động"/>
+			<Item id="2031701" type="ward" value="Xã Phi Hải"/>
+			<Item id="2031731" type="ward" value="Xã Phúc Sen"/>
+			<Item id="2031703" type="ward" value="Xã Quảng Hưng"/>
+			<Item id="2031705" type="ward" value="Xã Quốc Dân"/>
+			<Item id="2031729" type="ward" value="Xã Quốc Phong"/>
+			<Item id="2031715" type="ward" value="Xã Tự Do"/>
+			<Item id="2031711" type="ward" value="Xã Đoài Khôn"/>
+			<Item id="2031707" type="ward" value="Xã Độc Lập"/>
+		</Item>
+		<Item id="20307" type="district" value="Huyện Thông Nông">
+			<Item id="2030715" type="ward" value="Thị trấn Thông Nông"/>
+			<Item id="2030719" type="ward" value="Xã Bình Lãng"/>
+			<Item id="2030721" type="ward" value="Xã Cần Nông"/>
+			<Item id="2030701" type="ward" value="Xã Cần Yên"/>
+			<Item id="2030711" type="ward" value="Xã Lương Can"/>
+			<Item id="2030705" type="ward" value="Xã Lương Thông"/>
+			<Item id="2030717" type="ward" value="Xã Ngọc Động"/>
+			<Item id="2030713" type="ward" value="Xã Thanh Long"/>
+			<Item id="2030703" type="ward" value="Xã Vị Quang"/>
+			<Item id="2030709" type="ward" value="Xã Yên Sơn"/>
+			<Item id="2030707" type="ward" value="Xã Đa Thông"/>
+		</Item>
+		<Item id="20321" type="district" value="Huyện Thạch An">
+			<Item id="2032101" type="ward" value="Thị trấn Đông Khê"/>
+			<Item id="2032125" type="ward" value="Xã Canh Tân"/>
+			<Item id="2032131" type="ward" value="Xã Danh Sỹ"/>
+			<Item id="2032103" type="ward" value="Xã Kim Đồng"/>
+			<Item id="2032115" type="ward" value="Xã Lê Lai"/>
+			<Item id="2032119" type="ward" value="Xã Lê Lợi"/>
+			<Item id="2032105" type="ward" value="Xã Minh Khai"/>
+			<Item id="2032129" type="ward" value="Xã Quang Trọng"/>
+			<Item id="2032111" type="ward" value="Xã Thuỵ Hùng"/>
+			<Item id="2032109" type="ward" value="Xã Thái Cường"/>
+			<Item id="2032133" type="ward" value="Xã Thái Học"/>
+			<Item id="2032107" type="ward" value="Xã Thị Ngân"/>
+			<Item id="2032113" type="ward" value="Xã Trọng Con"/>
+			<Item id="2032123" type="ward" value="Xã Vân Trình"/>
+			<Item id="2032117" type="ward" value="Xã Đức Long"/>
+			<Item id="2032127" type="ward" value="Xã Đức Thông"/>
+			<Item id="2032121" type="ward" value="Xã Đức Xuân"/>
+		</Item>
+		<Item id="20309" type="district" value="Huyện Trà Lĩnh">
+			<Item id="2030915" type="ward" value="Thị trấn Hùng Quốc"/>
+			<Item id="2030919" type="ward" value="Xã Cao Chương"/>
+			<Item id="2030901" type="ward" value="Xã Cô Mười"/>
+			<Item id="2030909" type="ward" value="Xã Lưu Ngọc"/>
+			<Item id="2030905" type="ward" value="Xã Quang Hán"/>
+			<Item id="2030907" type="ward" value="Xã Quang Trung"/>
+			<Item id="2030913" type="ward" value="Xã Quang Vinh"/>
+			<Item id="2030911" type="ward" value="Xã Quốc Toản"/>
+			<Item id="2030903" type="ward" value="Xã Tri Phương"/>
+			<Item id="2030917" type="ward" value="Xã Xuân Nội"/>
+		</Item>
+		<Item id="20311" type="district" value="Huyện Trùng Khánh">
+			<Item id="2031111" type="ward" value="Thị trấn Trùng Khánh"/>
+			<Item id="2031103" type="ward" value="Xã Cao Thăng"/>
+			<Item id="2031121" type="ward" value="Xã Chí Viễn"/>
+			<Item id="2031133" type="ward" value="Xã Cảnh Tiên"/>
+			<Item id="2031137" type="ward" value="Xã Khâm Thành"/>
+			<Item id="2031123" type="ward" value="Xã Lăng Hiếu"/>
+			<Item id="2031119" type="ward" value="Xã Lăng Yên"/>
+			<Item id="2031135" type="ward" value="Xã Ngọc Chung"/>
+			<Item id="2031139" type="ward" value="Xã Ngọc Côn"/>
+			<Item id="2031113" type="ward" value="Xã Ngọc Khê"/>
+			<Item id="2031125" type="ward" value="Xã Phong Châu"/>
+			<Item id="2031115" type="ward" value="Xã Phong Nậm"/>
+			<Item id="2031107" type="ward" value="Xã Thân Giáp"/>
+			<Item id="2031105" type="ward" value="Xã Thông Hoè"/>
+			<Item id="2031101" type="ward" value="Xã Trung Phúc"/>
+			<Item id="2031109" type="ward" value="Xã Đoài Côn"/>
+			<Item id="2031131" type="ward" value="Xã Đàm Thuỷ"/>
+			<Item id="2031127" type="ward" value="Xã Đình Minh"/>
+			<Item id="2031117" type="ward" value="Xã Đình Phong"/>
+			<Item id="2031129" type="ward" value="Xã Đức Hồng"/>
+		</Item>
+		<Item id="20301" type="district" value="Thị xã Cao Bằng">
+			<Item id="2030103" type="ward" value="Phường Hợp Giang"/>
+			<Item id="2030111" type="ward" value="Phường Ngọc Xuân"/>
+			<Item id="2030101" type="ward" value="Phường Sông Bằng"/>
+			<Item id="2030113" type="ward" value="Phường Sông Hiến"/>
+			<Item id="2030105" type="ward" value="Phường Tân Giang"/>
+			<Item id="2030115" type="ward" value="Phường Đề Thám"/>
+			<Item id="2030121" type="ward" value="Xã Chu Trinh"/>
+			<Item id="2030109" type="ward" value="Xã Duyệt Trung"/>
+			<Item id="2030107" type="ward" value="Xã Hoà Chung"/>
+			<Item id="2030117" type="ward" value="Xã Hưng Đạo"/>
+			<Item id="2030119" type="ward" value="Xã Vĩnh Quang"/>
+		</Item>
+	</Item>
+	<Item id="823" type="province" value="Cà Mau">
+		<Item id="82309" type="district" value="Huyện Cái Nước">
+			<Item id="8230907" type="ward" value="Thị trấn Cái Nước"/>
+			<Item id="8230919" type="ward" value="Xã Hoà Mỹ"/>
+			<Item id="8230913" type="ward" value="Xã Hưng Mỹ"/>
+			<Item id="8230909" type="ward" value="Xã Lương Thế Trân"/>
+			<Item id="8230911" type="ward" value="Xã Phú Hưng"/>
+			<Item id="8230917" type="ward" value="Xã Thạnh Phú"/>
+			<Item id="8230905" type="ward" value="Xã Trần Thới"/>
+			<Item id="8230903" type="ward" value="Xã Tân Hưng"/>
+			<Item id="8230915" type="ward" value="Xã Tân Hưng Đông"/>
+			<Item id="8230921" type="ward" value="Xã Đông Hưng"/>
+			<Item id="8230901" type="ward" value="Xã Đông Thới"/>
+		</Item>
+		<Item id="82313" type="district" value="Huyện Ngọc Hiển">
+			<Item id="8231313" type="ward" value="Thị trấn Rạch Gốc"/>
+			<Item id="8231305" type="ward" value="Xã Tam Giang Tây"/>
+			<Item id="8231311" type="ward" value="Xã Tân ân"/>
+			<Item id="8231301" type="ward" value="Xã Tân ân Tây"/>
+			<Item id="8231309" type="ward" value="Xã Viên An"/>
+			<Item id="8231307" type="ward" value="Xã Viên An Đông"/>
+			<Item id="8231303" type="ward" value="Xã Đất Mũi"/>
+		</Item>
+		<Item id="82312" type="district" value="Huyện Năm Căn">
+			<Item id="8231205" type="ward" value="Thị trấn Năm Căn"/>
+			<Item id="8231201" type="ward" value="Xã Hiệp Tùng"/>
+			<Item id="8231207" type="ward" value="Xã Hàm Rồng"/>
+			<Item id="8231211" type="ward" value="Xã Hàng Vịnh"/>
+			<Item id="8231215" type="ward" value="Xã Lâm Hải"/>
+			<Item id="8231213" type="ward" value="Xã Tam Giang"/>
+			<Item id="8231203" type="ward" value="Xã Tam Giang Đông"/>
+			<Item id="8231209" type="ward" value="Xã Đất Mới"/>
+		</Item>
+		<Item id="82308" type="district" value="Huyện Phú Tân">
+			<Item id="8230805" type="ward" value="Thị trấn Cái Đôi Vàm"/>
+			<Item id="8230813" type="ward" value="Xã Nguyễn Việt Khái"/>
+			<Item id="8230807" type="ward" value="Xã Phú Mỹ"/>
+			<Item id="8230817" type="ward" value="xã Phú Thuận"/>
+			<Item id="8230801" type="ward" value="Xã Phú Tân"/>
+			<Item id="8230815" type="ward" value="xã Rạch Chèo"/>
+			<Item id="8230811" type="ward" value="Xã Tân Hưng Tây"/>
+			<Item id="8230809" type="ward" value="Xã Tân Hải"/>
+			<Item id="8230803" type="ward" value="Xã Việt Thắng"/>
+		</Item>
+		<Item id="82303" type="district" value="Huyện Thới Bình">
+			<Item id="8230303" type="ward" value="Thị trấn Thới Bình"/>
+			<Item id="8230305" type="ward" value="Xã Biển Bạch"/>
+			<Item id="8230309" type="ward" value="Xã Biển Bạch Đông"/>
+			<Item id="8230319" type="ward" value="Xã Hồ Thị Kỷ"/>
+			<Item id="8230311" type="ward" value="Xã Thới Bình"/>
+			<Item id="8230321" type="ward" value="Xã Trí Lực"/>
+			<Item id="8230307" type="ward" value="Xã Trí Phải"/>
+			<Item id="8230323" type="ward" value="Xã Tân Bằng"/>
+			<Item id="8230301" type="ward" value="Xã Tân Lộc"/>
+			<Item id="8230315" type="ward" value="Xã Tân Lộc Bắc"/>
+			<Item id="8230317" type="ward" value="Xã Tân Lộc Đông"/>
+			<Item id="8230313" type="ward" value="Xã Tân Phú"/>
+		</Item>
+		<Item id="82307" type="district" value="Huyện Trần Văn Thời">
+			<Item id="8230705" type="ward" value="Thị trấn Sông Đốc"/>
+			<Item id="8230703" type="ward" value="Thị trấn Trần Văn Thời"/>
+			<Item id="8230713" type="ward" value="Xã Khánh Bình"/>
+			<Item id="8230709" type="ward" value="Xã Khánh Bình Tây"/>
+			<Item id="8230707" type="ward" value="Xã Khánh Bình Tây Bắc"/>
+			<Item id="8230715" type="ward" value="Xã Khánh Bình Đông"/>
+			<Item id="8230701" type="ward" value="Xã Khánh Hưng"/>
+			<Item id="8230717" type="ward" value="Xã Khánh Hải"/>
+			<Item id="8230725" type="ward" value="Xã Khánh Lộc"/>
+			<Item id="8230719" type="ward" value="Xã Lợi An"/>
+			<Item id="8230721" type="ward" value="Xã Phong Lạc"/>
+			<Item id="8230723" type="ward" value="Xã Phong Điền"/>
+			<Item id="8230711" type="ward" value="Xã Trần Hợi"/>
+		</Item>
+		<Item id="82305" type="district" value="Huyện U Minh">
+			<Item id="8230503" type="ward" value="Thị trấn U Minh"/>
+			<Item id="8230501" type="ward" value="Xã Khánh An"/>
+			<Item id="8230505" type="ward" value="Xã Khánh Hòa"/>
+			<Item id="8230513" type="ward" value="Xã Khánh Hội"/>
+			<Item id="8230511" type="ward" value="Xã Khánh Lâm"/>
+			<Item id="8230515" type="ward" value="Xã Khánh Thuận"/>
+			<Item id="8230507" type="ward" value="Xã Khánh Tiến"/>
+			<Item id="8230509" type="ward" value="Xã Nguyễn Phích"/>
+		</Item>
+		<Item id="82311" type="district" value="Huyện Đầm Dơi">
+			<Item id="8231109" type="ward" value="Thị trấn Đầm Dơi"/>
+			<Item id="8231125" type="ward" value="Xã Nguyễn Huân"/>
+			<Item id="8231127" type="ward" value="Xã Ngọc Chánh"/>
+			<Item id="8231123" type="ward" value="Xã Quách Phẩm"/>
+			<Item id="8231101" type="ward" value="Xã Quách Phẩm Bắc"/>
+			<Item id="8231107" type="ward" value="Xã Thanh Tùng"/>
+			<Item id="8231103" type="ward" value="Xã Trần Phán"/>
+			<Item id="8231105" type="ward" value="Xã Tân Duyệt"/>
+			<Item id="8231129" type="ward" value="Xã Tân Dân"/>
+			<Item id="8231117" type="ward" value="Xã Tân Thuận"/>
+			<Item id="8231121" type="ward" value="Xã Tân Tiến"/>
+			<Item id="8231131" type="ward" value="Xã Tân Trung"/>
+			<Item id="8231115" type="ward" value="Xã Tân Đức"/>
+			<Item id="8231111" type="ward" value="Xã Tạ An Khương"/>
+			<Item id="8231119" type="ward" value="Xã Tạ An Khương Nam"/>
+			<Item id="8231113" type="ward" value="Xã Tạ An Khương Đông"/>
+		</Item>
+		<Item id="82301" type="district" value="Thành phố Cà Mau">
+			<Item id="8230109" type="ward" value="Phường 1"/>
+			<Item id="8230111" type="ward" value="Phường 2"/>
+			<Item id="8230107" type="ward" value="Phường 4"/>
+			<Item id="8230101" type="ward" value="Phường 5"/>
+			<Item id="8230115" type="ward" value="Phường 6"/>
+			<Item id="8230117" type="ward" value="Phường 7"/>
+			<Item id="8230113" type="ward" value="Phường 8"/>
+			<Item id="8230105" type="ward" value="Phường 9"/>
+			<Item id="8230133" type="ward" value="Phường Tân Thành"/>
+			<Item id="8230131" type="ward" value="Phường Tân Xuyên"/>
+			<Item id="8230119" type="ward" value="Xã An Xuyên"/>
+			<Item id="8230127" type="ward" value="Xã Hòa Thành"/>
+			<Item id="8230129" type="ward" value="Xã Hòa Tân"/>
+			<Item id="8230103" type="ward" value="Xã Lý Văn Lâm"/>
+			<Item id="8230121" type="ward" value="Xã Tân Thành"/>
+			<Item id="8230123" type="ward" value="Xã Tắc Vân"/>
+			<Item id="8230125" type="ward" value="Xã Định Bình"/>
+		</Item>
+	</Item>
+	<Item id="815" type="province" value="Cần Thơ">
+		<Item id="81527" type="district" value="Huyện Cờ Đỏ">
+			<Item id="8152711" type="ward" value="Thị trấn Cờ Đỏ"/>
+			<Item id="8152739" type="ward" value="Xã Thạnh Phú"/>
+			<Item id="8152713" type="ward" value="Xã Thới Hưng"/>
+			<Item id="8152731" type="ward" value="Xã Thới Xuân"/>
+			<Item id="8152701" type="ward" value="Xã Thới Đông"/>
+			<Item id="8152735" type="ward" value="Xã Trung An"/>
+			<Item id="8152737" type="ward" value="Xã Trung Hưng"/>
+			<Item id="8152733" type="ward" value="Xã Trung Thạnh"/>
+			<Item id="8152705" type="ward" value="Xã Đông Hiệp"/>
+			<Item id="8152729" type="ward" value="Xã Đông Thắng"/>
+		</Item>
+		<Item id="81529" type="district" value="Huyện Phong Điền">
+			<Item id="8152913" type="ward" value="Thị Trấn Phong Điền"/>
+			<Item id="8152907" type="ward" value="Xã Giai Xuân"/>
+			<Item id="8152901" type="ward" value="Xã Mỹ Khánh"/>
+			<Item id="8152911" type="ward" value="Xã Nhơn Nghĩa"/>
+			<Item id="8152905" type="ward" value="Xã Nhơn ái"/>
+			<Item id="8152903" type="ward" value="Xã Trường Long"/>
+			<Item id="8152909" type="ward" value="Xã Tân Thới"/>
+		</Item>
+		<Item id="81531" type="district" value="Huyện Thới Lai">
+			<Item id="8153101" type="ward" value="Thị Trấn Thới Lai"/>
+			<Item id="8153109" type="ward" value="Xã Thới Thạnh"/>
+			<Item id="8153119" type="ward" value="Xã Thới Tân"/>
+			<Item id="8153115" type="ward" value="Xã Trường Thành"/>
+			<Item id="8153117" type="ward" value="Xã Trường Thắng"/>
+			<Item id="8153103" type="ward" value="Xã Trường Xuân"/>
+			<Item id="8153105" type="ward" value="Xã Trường Xuân A"/>
+			<Item id="8153107" type="ward" value="Xã Trường Xuân B"/>
+			<Item id="8153111" type="ward" value="Xã Tân Thạnh"/>
+			<Item id="8153125" type="ward" value="Xã Xuân Thắng"/>
+			<Item id="8153121" type="ward" value="Xã Đông Bình"/>
+			<Item id="8153123" type="ward" value="Xã Đông Thuận"/>
+			<Item id="8153113" type="ward" value="Xã Định Môn"/>
+		</Item>
+		<Item id="81525" type="district" value="Huyện Vĩnh Thạnh">
+			<Item id="8152507" type="ward" value="Thị trấn Thạnh An"/>
+			<Item id="8152519" type="ward" value="Thị Trấn Vĩnh Thạnh"/>
+			<Item id="8152501" type="ward" value="Xã Thạnh An"/>
+			<Item id="8152515" type="ward" value="Xã Thạnh Lộc"/>
+			<Item id="8152523" type="ward" value="Xã Thạnh Lợi"/>
+			<Item id="8152503" type="ward" value="Xã Thạnh Mỹ"/>
+			<Item id="8152505" type="ward" value="Xã Thạnh Qưới"/>
+			<Item id="8152511" type="ward" value="Xã Thạnh Thắng"/>
+			<Item id="8152521" type="ward" value="Xã Thạnh Tiến"/>
+			<Item id="8152525" type="ward" value="Xã Vĩnh Bình"/>
+			<Item id="8152509" type="ward" value="Xã Vĩnh Trinh"/>
+		</Item>
+		<Item id="81521" type="district" value="Quận Bình Thuỷ">
+			<Item id="8152107" type="ward" value="Phường An Thới"/>
+			<Item id="8152103" type="ward" value="Phường Bình Thủy"/>
+			<Item id="8152113" type="ward" value="Phường Bùi Hữu Nghĩa"/>
+			<Item id="8152109" type="ward" value="Phường Long Hòa"/>
+			<Item id="8152111" type="ward" value="Phường Long Tuyền"/>
+			<Item id="8152105" type="ward" value="Phường Thới An Đông"/>
+			<Item id="8152115" type="ward" value="Phường Trà An"/>
+			<Item id="8152101" type="ward" value="Phường Trà Nóc"/>
+		</Item>
+		<Item id="81523" type="district" value="Quận Cái Răng">
+			<Item id="8152311" type="ward" value="Phường Ba Láng"/>
+			<Item id="8152307" type="ward" value="Phường Hưng Phú"/>
+			<Item id="8152309" type="ward" value="Phường Hưng Thạnh"/>
+			<Item id="8152303" type="ward" value="Phường Lê Bình"/>
+			<Item id="8152313" type="ward" value="Phường Phú Thứ"/>
+			<Item id="8152305" type="ward" value="Phường Thường Thạnh"/>
+			<Item id="8152301" type="ward" value="Phường Tân Phú"/>
+		</Item>
+		<Item id="81519" type="district" value="Quận Ninh Kiều">
+			<Item id="8151923" type="ward" value="Phường An Bình"/>
+			<Item id="8151901" type="ward" value="Phường An Cư"/>
+			<Item id="8151907" type="ward" value="Phường An Hòa"/>
+			<Item id="8151913" type="ward" value="Phường An Hội"/>
+			<Item id="8151925" type="ward" value="Phường An Khánh"/>
+			<Item id="8151917" type="ward" value="Phường An Lạc"/>
+			<Item id="8151911" type="ward" value="Phường An Nghiệp"/>
+			<Item id="8151919" type="ward" value="Phường An Phú"/>
+			<Item id="8151905" type="ward" value="Phường Cái Khế"/>
+			<Item id="8151903" type="ward" value="Phường Hưng Lợi"/>
+			<Item id="8151909" type="ward" value="Phường Thới Bình"/>
+			<Item id="8151915" type="ward" value="Phường Tân An"/>
+			<Item id="8151921" type="ward" value="Phường Xuân Khánh"/>
+		</Item>
+		<Item id="81503" type="district" value="Quận Thốt Nốt">
+			<Item id="8150307" type="ward" value="Phường Thuận An"/>
+			<Item id="8150315" type="ward" value="Phường Thuận Hưng"/>
+			<Item id="8150319" type="ward" value="Phường Thạnh Hòa"/>
+			<Item id="8150305" type="ward" value="Phường Thốt Nốt"/>
+			<Item id="8150321" type="ward" value="Phường Thới Thuận"/>
+			<Item id="8150311" type="ward" value="Phường Trung Kiên"/>
+			<Item id="8150309" type="ward" value="Phường Trung Nhứt"/>
+			<Item id="8150317" type="ward" value="Phường Tân Hưng"/>
+			<Item id="8150301" type="ward" value="Phường Tân Lộc"/>
+		</Item>
+		<Item id="81505" type="district" value="Quận Ô Môn">
+			<Item id="8150505" type="ward" value="Phường Châu Văn Liêm"/>
+			<Item id="8150513" type="ward" value="Phường Long Hưng"/>
+			<Item id="8150501" type="ward" value="Phường Phước Thới"/>
+			<Item id="8150511" type="ward" value="Phường Thới  Hoà"/>
+			<Item id="8150503" type="ward" value="Phường Thới An"/>
+			<Item id="8150507" type="ward" value="Phường Thới Long"/>
+			<Item id="8150509" type="ward" value="Phường Trường Lạc"/>
+		</Item>
+	</Item>
+	<Item id="603" type="province" value="Gia Lai">
+		<Item id="60317" type="district" value="Huyện Chư Prông">
+			<Item id="6031713" type="ward" value="Thị trấn Chư Prông"/>
+			<Item id="6031719" type="ward" value="Xã Bàu Cạn"/>
+			<Item id="6031715" type="ward" value="Xã Bình Giáo"/>
+			<Item id="6031739" type="ward" value="Xã Ia Bang"/>
+			<Item id="6031725" type="ward" value="Xã Ia Boòng"/>
+			<Item id="6031705" type="ward" value="Xã Ia Băng"/>
+			<Item id="6031703" type="ward" value="Xã Ia Drăng"/>
+			<Item id="6031731" type="ward" value="Xã Ia Ga"/>
+			<Item id="6031737" type="ward" value="Xã Ia Kly"/>
+			<Item id="6031733" type="ward" value="Xã Ia Lâu"/>
+			<Item id="6031727" type="ward" value="Xã Ia Me"/>
+			<Item id="6031735" type="ward" value="Xã Ia Mơ"/>
+			<Item id="6031707" type="ward" value="Xã Ia O"/>
+			<Item id="6031721" type="ward" value="Xã Ia Phìn"/>
+			<Item id="6031709" type="ward" value="Xã Ia Pia"/>
+			<Item id="6031711" type="ward" value="Xã Ia Piơr"/>
+			<Item id="6031701" type="ward" value="Xã Ia Púch"/>
+			<Item id="6031723" type="ward" value="Xã Ia Tôr"/>
+			<Item id="6031729" type="ward" value="Xã Ia Vê"/>
+			<Item id="6031717" type="ward" value="Xã Thăng Hưng"/>
+		</Item>
+		<Item id="60307" type="district" value="Huyện Chư Păh">
+			<Item id="6030709" type="ward" value="Thị trấn Phú Hòa"/>
+			<Item id="6030725" type="ward" value="Xã Chư Jôr"/>
+			<Item id="6030719" type="ward" value="Xã Chư Đăng Ya"/>
+			<Item id="6030711" type="ward" value="Xã Hà Tây"/>
+			<Item id="6030701" type="ward" value="Xã Hòa Phú"/>
+			<Item id="6030721" type="ward" value="Xã Ia Ka"/>
+			<Item id="6030713" type="ward" value="Xã Ia Khươl"/>
+			<Item id="6030715" type="ward" value="Xã Ia Ly"/>
+			<Item id="6030717" type="ward" value="Xã Ia Mơ Nông"/>
+			<Item id="6030707" type="ward" value="Xã Ia Nhin"/>
+			<Item id="6030703" type="ward" value="Xã Ia Phí"/>
+			<Item id="6030723" type="ward" value="Xã Nghĩa Hòa"/>
+			<Item id="6030727" type="ward" value="Xã Nghĩa Hưng"/>
+			<Item id="6030705" type="ward" value="Xã Đăk Tơ Ver"/>
+		</Item>
+		<Item id="60331" type="district" value="Huyện Chư Pưh">
+			<Item id="6033117" type="ward" value="Thị trấn Nhơn Hòa"/>
+			<Item id="6033107" type="ward" value="Xã Chư Don"/>
+			<Item id="6033103" type="ward" value="Xã Ia Blứ"/>
+			<Item id="6033109" type="ward" value="Xã Ia Dreng"/>
+			<Item id="6033111" type="ward" value="Xã Ia Hla"/>
+			<Item id="6033113" type="ward" value="Xã Ia Hrú"/>
+			<Item id="6033101" type="ward" value="Xã Ia Le"/>
+			<Item id="6033105" type="ward" value="Xã Ia Phang"/>
+			<Item id="6033115" type="ward" value="Xã Ia Rong"/>
+		</Item>
+		<Item id="60319" type="district" value="Huyện Chư Sê">
+			<Item id="6031913" type="ward" value="Thị trấn Chư Sê"/>
+			<Item id="6031901" type="ward" value="Xã AL Bá"/>
+			<Item id="6031919" type="ward" value="Xã AYun"/>
+			<Item id="6031945" type="ward" value="Xã Bar Măih"/>
+			<Item id="6031905" type="ward" value="Xã Bờ Ngoong"/>
+			<Item id="6031933" type="ward" value="Xã Chư Pơng"/>
+			<Item id="6031923" type="ward" value="Xã Dun"/>
+			<Item id="6031925" type="ward" value="Xã H Bông"/>
+			<Item id="6031921" type="ward" value="Xã Ia Blang"/>
+			<Item id="6031917" type="ward" value="Xã Ia Glai"/>
+			<Item id="6031907" type="ward" value="Xã Ia HLốp"/>
+			<Item id="6031929" type="ward" value="Xã Ia Ko"/>
+			<Item id="6031941" type="ward" value="Xã Ia Pal"/>
+			<Item id="6031915" type="ward" value="Xã Ia Tiêm"/>
+			<Item id="6031943" type="ward" value="Xã Kông HTok"/>
+		</Item>
+		<Item id="60309" type="district" value="Huyện Ia Grai">
+			<Item id="6030903" type="ward" value="Thị trấn Ia Kha"/>
+			<Item id="6030921" type="ward" value="Xã Ia Bă"/>
+			<Item id="6030907" type="ward" value="Xã Ia Chia"/>
+			<Item id="6030917" type="ward" value="Xã Ia Dêr"/>
+			<Item id="6030911" type="ward" value="Xã Ia Hrung"/>
+			<Item id="6030913" type="ward" value="Xã Ia Khai"/>
+			<Item id="6030901" type="ward" value="Xã Ia KRai"/>
+			<Item id="6030915" type="ward" value="Xã Ia O"/>
+			<Item id="6030919" type="ward" value="Xã Ia Pếch"/>
+			<Item id="6030909" type="ward" value="Xã Ia Sao"/>
+			<Item id="6030905" type="ward" value="Xã Ia Tô"/>
+			<Item id="6030923" type="ward" value="Xã Ia Yok"/>
+		</Item>
+		<Item id="60320" type="district" value="Huyện Ia Pa">
+			<Item id="6032013" type="ward" value="Xã Chư Mố"/>
+			<Item id="6032003" type="ward" value="Xã Chư Răng"/>
+			<Item id="6032017" type="ward" value="Xã Ia Broăi"/>
+			<Item id="6032001" type="ward" value="Xã Ia KDăm"/>
+			<Item id="6032015" type="ward" value="Xã Ia Ma Rơn"/>
+			<Item id="6032007" type="ward" value="Xã Ia Trok"/>
+			<Item id="6032005" type="ward" value="Xã Ia Tul"/>
+			<Item id="6032011" type="ward" value="Xã Kim Tân"/>
+			<Item id="6032009" type="ward" value="Xã Pờ Tó"/>
+		</Item>
+		<Item id="60303" type="district" value="Huyện KBang">
+			<Item id="6030311" type="ward" value="Thị trấn KBang"/>
+			<Item id="6030303" type="ward" value="Xã Kon Pne"/>
+			<Item id="6030301" type="ward" value="Xã KRong"/>
+			<Item id="6030323" type="ward" value="Xã Kông Lơng Khơng"/>
+			<Item id="6030325" type="ward" value="Xã Kông Pla"/>
+			<Item id="6030317" type="ward" value="Xã Lơ Ku"/>
+			<Item id="6030307" type="ward" value="Xã Nghĩa An"/>
+			<Item id="6030305" type="ward" value="Xã Sơ Pai"/>
+			<Item id="6030315" type="ward" value="Xã Sơn Lang"/>
+			<Item id="6030321" type="ward" value="Xã Tơ Tung"/>
+			<Item id="6030319" type="ward" value="Xã Đông"/>
+			<Item id="6030309" type="ward" value="Xã Đăk HLơ"/>
+			<Item id="6030313" type="ward" value="Xã Đăk Roong"/>
+			<Item id="6030327" type="ward" value="Xã Đăk Smar"/>
+		</Item>
+		<Item id="60323" type="district" value="Huyện Krông Pa">
+			<Item id="6032309" type="ward" value="Thị trấn Phú Túc"/>
+			<Item id="6032305" type="ward" value="Xã Chư Drăng"/>
+			<Item id="6032313" type="ward" value="Xã Chư Gu"/>
+			<Item id="6032307" type="ward" value="Xã Chư Ngọc"/>
+			<Item id="6032325" type="ward" value="Xã Chư RCăm"/>
+			<Item id="6032321" type="ward" value="Xã Ia HDreh"/>
+			<Item id="6032317" type="ward" value="Xã Ia Mláh"/>
+			<Item id="6032323" type="ward" value="Xã Ia RMok"/>
+			<Item id="6032311" type="ward" value="Xã Ia RSai"/>
+			<Item id="6032303" type="ward" value="Xã Ia RSươm"/>
+			<Item id="6032327" type="ward" value="Xã Krông Năng"/>
+			<Item id="6032319" type="ward" value="Xã Phú Cần"/>
+			<Item id="6032301" type="ward" value="Xã Uar"/>
+			<Item id="6032315" type="ward" value="Xã Đất Bằng"/>
+		</Item>
+		<Item id="60313" type="district" value="Huyện Kông Chro">
+			<Item id="6031307" type="ward" value="Thị trấn Kông Chro"/>
+			<Item id="6031311" type="ward" value="Xã An Trung"/>
+			<Item id="6031319" type="ward" value="Xã Chơ Long"/>
+			<Item id="6031309" type="ward" value="Xã Chư Krêy"/>
+			<Item id="6031303" type="ward" value="Xã Kông Yang"/>
+			<Item id="6031315" type="ward" value="Xã SRó"/>
+			<Item id="6031301" type="ward" value="Xã Ya Ma"/>
+			<Item id="6031321" type="ward" value="Xã Yang Nam"/>
+			<Item id="6031305" type="ward" value="Xã Yang Trung"/>
+			<Item id="6031325" type="ward" value="Xã Đăk Kơ Ning"/>
+			<Item id="6031323" type="ward" value="Xã Đăk Pling"/>
+			<Item id="6031327" type="ward" value="Xã Đăk Pơ Pho"/>
+			<Item id="6031317" type="ward" value="Xã Đăk Song"/>
+			<Item id="6031313" type="ward" value="Xã Đăk Tơ Pang"/>
+		</Item>
+		<Item id="60305" type="district" value="Huyện Mang Yang">
+			<Item id="6030509" type="ward" value="Thị trấn Kon Dơng"/>
+			<Item id="6030511" type="ward" value="Xã Ayun"/>
+			<Item id="6030507" type="ward" value="Xã Hà Ra"/>
+			<Item id="6030519" type="ward" value="Xã Kon Chiêng"/>
+			<Item id="6030501" type="ward" value="Xã Kon Thụp"/>
+			<Item id="6030503" type="ward" value="Xã Lơ Pang"/>
+			<Item id="6030517" type="ward" value="Xã Đê Ar"/>
+			<Item id="6030515" type="ward" value="Xã Đăk Djrăng"/>
+			<Item id="6030505" type="ward" value="Xã Đăk Trôi"/>
+			<Item id="6030513" type="ward" value="Xã Đăk Yă"/>
+			<Item id="6030523" type="ward" value="Xã ĐăkJơTa"/>
+			<Item id="6030521" type="ward" value="Xã ĐăkTaLey"/>
+		</Item>
+		<Item id="60329" type="district" value="Huyện Phú Thiện">
+			<Item id="6032901" type="ward" value="Thị Trấn Phú Thiện"/>
+			<Item id="6032917" type="ward" value="Xã Ayun Hạ"/>
+			<Item id="6032919" type="ward" value="Xã Chrô PơNan"/>
+			<Item id="6032905" type="ward" value="Xã Chư A Thai"/>
+			<Item id="6032911" type="ward" value="Xã Ia Hiao"/>
+			<Item id="6032903" type="ward" value="Xã Ia Ke"/>
+			<Item id="6032909" type="ward" value="Xã Ia Peng"/>
+			<Item id="6032907" type="ward" value="Xã Ia Piar"/>
+			<Item id="6032915" type="ward" value="Xã Ia Sol"/>
+			<Item id="6032913" type="ward" value="Xã Ia Yeng"/>
+		</Item>
+		<Item id="60327" type="district" value="Huyện Đăk Pơ">
+			<Item id="6032701" type="ward" value="Xã An Thành"/>
+			<Item id="6032711" type="ward" value="Xã Cư An"/>
+			<Item id="6032705" type="ward" value="Xã Hà Tam"/>
+			<Item id="6032713" type="ward" value="Xã Phú An"/>
+			<Item id="6032703" type="ward" value="Xã Tân An"/>
+			<Item id="6032715" type="ward" value="Xã Ya Hội"/>
+			<Item id="6032709" type="ward" value="Xã Yang Bắc"/>
+			<Item id="6032707" type="ward" value="Xã Đak Pơ"/>
+		</Item>
+		<Item id="60325" type="district" value="Huyện Đăk Đoa">
+			<Item id="6032521" type="ward" value="Thị trấn Đăk Đoa"/>
+			<Item id="6032513" type="ward" value="Xã A Dơk"/>
+			<Item id="6032511" type="ward" value="Xã Glar"/>
+			<Item id="6032519" type="ward" value="Xã H- Neng"/>
+			<Item id="6032533" type="ward" value="Xã HNol"/>
+			<Item id="6032527" type="ward" value="Xã Hà Bầu"/>
+			<Item id="6032523" type="ward" value="Xã Hà Đông"/>
+			<Item id="6032505" type="ward" value="Xã Hải Yang"/>
+			<Item id="6032517" type="ward" value="Xã Ia Băng"/>
+			<Item id="6032515" type="ward" value="Xã Ia Pết"/>
+			<Item id="6032507" type="ward" value="Xã K- Dang"/>
+			<Item id="6032525" type="ward" value="Xã Kon Gang"/>
+			<Item id="6032529" type="ward" value="Xã Nam Yang"/>
+			<Item id="6032501" type="ward" value="Xã Trang"/>
+			<Item id="6032509" type="ward" value="Xã Tân Bình"/>
+			<Item id="6032531" type="ward" value="Xã Đak Krong"/>
+			<Item id="6032503" type="ward" value="Xã Đăk Sơmei"/>
+		</Item>
+		<Item id="60315" type="district" value="Huyện Đức Cơ">
+			<Item id="6031503" type="ward" value="Thị trấn Chư Ty"/>
+			<Item id="6031513" type="ward" value="Xã Ia Din"/>
+			<Item id="6031515" type="ward" value="Xã Ia Dom"/>
+			<Item id="6031509" type="ward" value="Xã Ia Dơk"/>
+			<Item id="6031505" type="ward" value="Xã Ia Kla"/>
+			<Item id="6031501" type="ward" value="Xã Ia Kriêng"/>
+			<Item id="6031511" type="ward" value="Xã Ia Krêl"/>
+			<Item id="6031517" type="ward" value="Xã Ia Lang"/>
+			<Item id="6031519" type="ward" value="Xã Ia Nan"/>
+			<Item id="6031507" type="ward" value="Xã Ia Pnôn"/>
+		</Item>
+		<Item id="60301" type="district" value="Thành phố Pleiku">
+			<Item id="6030141" type="ward" value="Phường Chi Lăng"/>
+			<Item id="6030113" type="ward" value="Phường Diên Hồng"/>
+			<Item id="6030119" type="ward" value="Phường Hoa Lư"/>
+			<Item id="6030105" type="ward" value="Phường Hội Phú"/>
+			<Item id="6030117" type="ward" value="Phường Hội Thương"/>
+			<Item id="6030115" type="ward" value="Phường Ia Kring"/>
+			<Item id="6030145" type="ward" value="Phường Phù Đổng"/>
+			<Item id="6030143" type="ward" value="Phường Thắng Lợi"/>
+			<Item id="6030121" type="ward" value="Phường Thống Nhất"/>
+			<Item id="6030107" type="ward" value="Phường Trà Bá"/>
+			<Item id="6030101" type="ward" value="Phường Tây Sơn"/>
+			<Item id="6030123" type="ward" value="Phường Yên Thế"/>
+			<Item id="6030103" type="ward" value="Phường Yên Đỗ"/>
+			<Item id="6030139" type="ward" value="Phường Đống Đa"/>
+			<Item id="6030133" type="ward" value="Xã An Phú"/>
+			<Item id="6030127" type="ward" value="Xã Biển Hồ"/>
+			<Item id="6030125" type="ward" value="Xã Chư HDrông"/>
+			<Item id="6030131" type="ward" value="Xã Chư á"/>
+			<Item id="6030111" type="ward" value="Xã Diên Phú"/>
+			<Item id="6030137" type="ward" value="Xã Gào"/>
+			<Item id="6030135" type="ward" value="Xã Ia Kênh"/>
+			<Item id="6030129" type="ward" value="Xã Trà Đa"/>
+			<Item id="6030109" type="ward" value="Xã Tân Sơn"/>
+		</Item>
+		<Item id="60311" type="district" value="Thị xã An Khê">
+			<Item id="6031101" type="ward" value="Phường An Bình"/>
+			<Item id="6031107" type="ward" value="Phường An Phú"/>
+			<Item id="6031119" type="ward" value="Phường An Phước"/>
+			<Item id="6031109" type="ward" value="Phường An Tân"/>
+			<Item id="6031121" type="ward" value="Phường Ngô Mây"/>
+			<Item id="6031103" type="ward" value="Phường Tây Sơn"/>
+			<Item id="6031105" type="ward" value="Xã Cửu An"/>
+			<Item id="6031113" type="ward" value="Xã Song An"/>
+			<Item id="6031115" type="ward" value="Xã Thành An"/>
+			<Item id="6031111" type="ward" value="Xã Tú An"/>
+			<Item id="6031117" type="ward" value="Xã Xuân An"/>
+		</Item>
+		<Item id="60321" type="district" value="Thị xã Ayun Pa">
+			<Item id="6032129" type="ward" value="Phường Cheo Reo"/>
+			<Item id="6032131" type="ward" value="Phường Hoà Bình"/>
+			<Item id="6032127" type="ward" value="Phường Sông Bờ"/>
+			<Item id="6032125" type="ward" value="Phường Đoàn Kết"/>
+			<Item id="6032105" type="ward" value="Xã Chư Băh"/>
+			<Item id="6032117" type="ward" value="Xã Ia RTô"/>
+			<Item id="6032113" type="ward" value="Xã la RBol"/>
+			<Item id="6032101" type="ward" value="Xã la Sao"/>
+		</Item>
+	</Item>
+	<Item id="201" type="province" value="Hà Giang">
+		<Item id="20111" type="district" value="Huyện Bắc Mê">
+			<Item id="2011105" type="ward" value="Thị trấn Yên Phú"/>
+			<Item id="2011103" type="ward" value="Xã Giáp Trung"/>
+			<Item id="2011123" type="ward" value="Xã Lạc Nông"/>
+			<Item id="2011107" type="ward" value="Xã Minh Ngọc"/>
+			<Item id="2011101" type="ward" value="Xã Minh Sơn"/>
+			<Item id="2011117" type="ward" value="Xã Phiêng Luông"/>
+			<Item id="2011119" type="ward" value="Xã Phú Nam"/>
+			<Item id="2011113" type="ward" value="Xã Thượng Tân"/>
+			<Item id="2011111" type="ward" value="Xã Yên Cường"/>
+			<Item id="2011109" type="ward" value="Xã Yên Phong"/>
+			<Item id="2011121" type="ward" value="Xã Yên Định"/>
+			<Item id="2011115" type="ward" value="Xã Đường Hồng"/>
+			<Item id="2011125" type="ward" value="Xã Đường âm"/>
+		</Item>
+		<Item id="20119" type="district" value="Huyện Bắc Quang">
+			<Item id="2011903" type="ward" value="Thị trấn Việt Quang"/>
+			<Item id="2011905" type="ward" value="Thị trấn Vĩnh Tuy"/>
+			<Item id="2011941" type="ward" value="Xã Bằng Hành"/>
+			<Item id="2011925" type="ward" value="Xã Hùng An"/>
+			<Item id="2011915" type="ward" value="Xã Hữu Sản"/>
+			<Item id="2011917" type="ward" value="Xã Kim Ngọc"/>
+			<Item id="2011921" type="ward" value="Xã Liên Hiệp"/>
+			<Item id="2011919" type="ward" value="Xã Quang Minh"/>
+			<Item id="2011939" type="ward" value="Xã Thượng Bình"/>
+			<Item id="2011929" type="ward" value="Xã Tiên Kiều"/>
+			<Item id="2011907" type="ward" value="Xã Tân Lập"/>
+			<Item id="2011913" type="ward" value="Xã Tân Quang"/>
+			<Item id="2011937" type="ward" value="Xã Tân Thành"/>
+			<Item id="2011943" type="ward" value="Xã Việt Hồng"/>
+			<Item id="2011933" type="ward" value="Xã Việt Vinh"/>
+			<Item id="2011923" type="ward" value="Xã Vô Điếm"/>
+			<Item id="2011945" type="ward" value="Xã Vĩnh Hảo"/>
+			<Item id="2011931" type="ward" value="Xã Vĩnh Phúc"/>
+			<Item id="2011901" type="ward" value="Xã Đông Thành"/>
+			<Item id="2011909" type="ward" value="Xã Đồng Tiến"/>
+			<Item id="2011911" type="ward" value="Xã Đồng Tâm"/>
+			<Item id="2011935" type="ward" value="Xã Đồng Yên"/>
+			<Item id="2011927" type="ward" value="Xã Đức Xuân"/>
+		</Item>
+		<Item id="20113" type="district" value="Huyện Hoàng Su Phì">
+			<Item id="2011301" type="ward" value="Thị trấn Vinh Quang"/>
+			<Item id="2011319" type="ward" value="Xã Bản Luốc"/>
+			<Item id="2011337" type="ward" value="Xã Bản Máy"/>
+			<Item id="2011345" type="ward" value="Xã Bản Nhùng"/>
+			<Item id="2011339" type="ward" value="Xã Bản Phùng"/>
+			<Item id="2011325" type="ward" value="Xã Bản Péo"/>
+			<Item id="2011309" type="ward" value="Xã Chiến Phố"/>
+			<Item id="2011347" type="ward" value="Xã Hồ Thầu"/>
+			<Item id="2011327" type="ward" value="Xã Nam Sơn"/>
+			<Item id="2011335" type="ward" value="Xã Ngàm Đăng Vài"/>
+			<Item id="2011315" type="ward" value="Xã Nàng Đôn"/>
+			<Item id="2011323" type="ward" value="Xã Nậm Dịch"/>
+			<Item id="2011349" type="ward" value="Xã Nậm Khòa"/>
+			<Item id="2011329" type="ward" value="Xã Nậm Tỵ"/>
+			<Item id="2011333" type="ward" value="Xã Pố Lồ"/>
+			<Item id="2011343" type="ward" value="Xã Pờ Ly Ngài"/>
+			<Item id="2011317" type="ward" value="Xã Sán Xả Hồ"/>
+			<Item id="2011303" type="ward" value="Xã Thàng Tín"/>
+			<Item id="2011305" type="ward" value="Xã Thèn Chu Phìn"/>
+			<Item id="2011331" type="ward" value="Xã Thông Nguyên"/>
+			<Item id="2011313" type="ward" value="Xã Tân Tiến"/>
+			<Item id="2011307" type="ward" value="Xã Túng Sán"/>
+			<Item id="2011321" type="ward" value="Xã Tả Sử Choóng"/>
+			<Item id="2011341" type="ward" value="Xã Tụ Nhân"/>
+			<Item id="2011311" type="ward" value="Xã Đản Ván"/>
+		</Item>
+		<Item id="20105" type="district" value="Huyện Mèo Vạc">
+			<Item id="2010501" type="ward" value="Thị trấn Mèo Vạc"/>
+			<Item id="2010533" type="ward" value="Xã Cán Chu Phìn"/>
+			<Item id="2010531" type="ward" value="Xã Giàng Chu Phìn"/>
+			<Item id="2010519" type="ward" value="Xã Khâu Vai"/>
+			<Item id="2010527" type="ward" value="Xã Lũng Chinh"/>
+			<Item id="2010515" type="ward" value="Xã Lũng Pù"/>
+			<Item id="2010523" type="ward" value="Xã Niêm Sơn"/>
+			<Item id="2010521" type="ward" value="Xã Niêm Tòng"/>
+			<Item id="2010535" type="ward" value="Xã Nậm Ban"/>
+			<Item id="2010505" type="ward" value="Xã Pả Vi"/>
+			<Item id="2010525" type="ward" value="Xã Pải Lủng"/>
+			<Item id="2010511" type="ward" value="Xã Sơn Vĩ"/>
+			<Item id="2010509" type="ward" value="Xã Sủng Máng"/>
+			<Item id="2010507" type="ward" value="Xã Sủng Trà"/>
+			<Item id="2010529" type="ward" value="Xã Thượng Phùng"/>
+			<Item id="2010517" type="ward" value="Xã Tát Ngà"/>
+			<Item id="2010513" type="ward" value="Xã Tả Lủng"/>
+			<Item id="2010503" type="ward" value="Xã Xín Cái"/>
+		</Item>
+		<Item id="20118" type="district" value="Huyện Quang Bình">
+			<Item id="2011807" type="ward" value="Xã Bản Rịa"/>
+			<Item id="2011825" type="ward" value="Xã Bằng Lang"/>
+			<Item id="2011817" type="ward" value="Xã Hương Sơn"/>
+			<Item id="2011819" type="ward" value="Xã Nà Khương"/>
+			<Item id="2011803" type="ward" value="Xã Tiên Nguyên"/>
+			<Item id="2011821" type="ward" value="Xã Tiên Yên"/>
+			<Item id="2011827" type="ward" value="Xã Tân Bắc"/>
+			<Item id="2011805" type="ward" value="Xã Tân Nam"/>
+			<Item id="2011813" type="ward" value="Xã Tân Trịnh"/>
+			<Item id="2011823" type="ward" value="Xã Vĩ Thượng"/>
+			<Item id="2011829" type="ward" value="Xã Xuân Giang"/>
+			<Item id="2011801" type="ward" value="Xã Xuân Minh"/>
+			<Item id="2011811" type="ward" value="Xã Yên Bình"/>
+			<Item id="2011815" type="ward" value="Xã Yên Hà"/>
+			<Item id="2011809" type="ward" value="Xã Yên Thành"/>
+		</Item>
+		<Item id="20109" type="district" value="Huyện Quản Bạ">
+			<Item id="2010923" type="ward" value="Thị trấn Tam Sơn"/>
+			<Item id="2010925" type="ward" value="Xã Bát Đại Sơn"/>
+			<Item id="2010903" type="ward" value="Xã Cao Mã Pờ"/>
+			<Item id="2010901" type="ward" value="Xã Cán Tỷ"/>
+			<Item id="2010911" type="ward" value="Xã Lùng Tám"/>
+			<Item id="2010919" type="ward" value="Xã Nghĩa Thuận"/>
+			<Item id="2010913" type="ward" value="Xã Quyết Tiến"/>
+			<Item id="2010909" type="ward" value="Xã Quản Bạ"/>
+			<Item id="2010905" type="ward" value="Xã Thanh Vân"/>
+			<Item id="2010917" type="ward" value="Xã Thái An"/>
+			<Item id="2010921" type="ward" value="Xã Tùng Vài"/>
+			<Item id="2010915" type="ward" value="Xã Tả Ván"/>
+			<Item id="2010907" type="ward" value="Xã Đông Hà"/>
+		</Item>
+		<Item id="20115" type="district" value="Huyện Vị Xuyên">
+			<Item id="2011539" type="ward" value="Thị trấn Việt Lâm"/>
+			<Item id="2011505" type="ward" value="Thị trấn Vị Xuyên"/>
+			<Item id="2011547" type="ward" value="Xã Bạch Ngọc"/>
+			<Item id="2011543" type="ward" value="Xã Cao Bồ"/>
+			<Item id="2011503" type="ward" value="Xã Kim Linh"/>
+			<Item id="2011501" type="ward" value="Xã Kim Thạch"/>
+			<Item id="2011519" type="ward" value="Xã Lao Chải"/>
+			<Item id="2011525" type="ward" value="Xã Linh Hồ"/>
+			<Item id="2011507" type="ward" value="Xã Minh Tân"/>
+			<Item id="2011527" type="ward" value="Xã Ngọc Linh"/>
+			<Item id="2011529" type="ward" value="Xã Ngọc Minh"/>
+			<Item id="2011541" type="ward" value="Xã Phong Quang"/>
+			<Item id="2011533" type="ward" value="Xã Phú Linh"/>
+			<Item id="2011517" type="ward" value="Xã Phương Tiến"/>
+			<Item id="2011545" type="ward" value="Xã Quảng Ngần"/>
+			<Item id="2011511" type="ward" value="Xã Thanh Thủy"/>
+			<Item id="2011513" type="ward" value="Xã Thanh Đức"/>
+			<Item id="2011509" type="ward" value="Xã Thuận Hoà"/>
+			<Item id="2011523" type="ward" value="Xã Thượng Sơn"/>
+			<Item id="2011531" type="ward" value="Xã Trung Thành"/>
+			<Item id="2011535" type="ward" value="Xã Tùng Bá"/>
+			<Item id="2011537" type="ward" value="Xã Việt Lâm"/>
+			<Item id="2011515" type="ward" value="Xã Xín Chải"/>
+			<Item id="2011521" type="ward" value="Xã Đạo Đức"/>
+		</Item>
+		<Item id="20117" type="district" value="Huyện Xín Mần">
+			<Item id="2011701" type="ward" value="Thị trấn Cốc Pài"/>
+			<Item id="2011705" type="ward" value="Xã Bản Díu"/>
+			<Item id="2011719" type="ward" value="Xã Bản Ngò"/>
+			<Item id="2011729" type="ward" value="Xã Chí Cà"/>
+			<Item id="2011735" type="ward" value="Xã Chế Là"/>
+			<Item id="2011713" type="ward" value="Xã Cốc Rế"/>
+			<Item id="2011737" type="ward" value="Xã Khuôn Lùng"/>
+			<Item id="2011731" type="ward" value="Xã Ngán Chiên"/>
+			<Item id="2011723" type="ward" value="Xã Nà Chì"/>
+			<Item id="2011733" type="ward" value="Xã Nàn Ma"/>
+			<Item id="2011703" type="ward" value="Xã Nàn Xỉn"/>
+			<Item id="2011721" type="ward" value="Xã Nấm Dẩn"/>
+			<Item id="2011711" type="ward" value="Xã Pà Vây Sử"/>
+			<Item id="2011727" type="ward" value="Xã Quảng Nguyên"/>
+			<Item id="2011715" type="ward" value="Xã Thu Tà"/>
+			<Item id="2011709" type="ward" value="Xã Thèng Phàng"/>
+			<Item id="2011707" type="ward" value="Xã Trung Thịnh"/>
+			<Item id="2011717" type="ward" value="Xã Tả Nhìu"/>
+			<Item id="2011725" type="ward" value="Xã Xín Mần"/>
+		</Item>
+		<Item id="20107" type="district" value="Huyện Yên Minh">
+			<Item id="2010701" type="ward" value="Thị trấn Yên Minh"/>
+			<Item id="2010707" type="ward" value="Xã Bạch Đích"/>
+			<Item id="2010735" type="ward" value="Xã Du Già"/>
+			<Item id="2010723" type="ward" value="Xã Du Tiến"/>
+			<Item id="2010709" type="ward" value="Xã Hữu Vinh"/>
+			<Item id="2010731" type="ward" value="Xã Lao Và Chải"/>
+			<Item id="2010721" type="ward" value="Xã Lũng Hồ"/>
+			<Item id="2010711" type="ward" value="Xã Mậu Duệ"/>
+			<Item id="2010715" type="ward" value="Xã Mậu Long"/>
+			<Item id="2010729" type="ward" value="Xã Na Khê"/>
+			<Item id="2010717" type="ward" value="Xã Ngam La"/>
+			<Item id="2010733" type="ward" value="Xã Ngọc Long"/>
+			<Item id="2010703" type="ward" value="Xã Phú Lũng"/>
+			<Item id="2010725" type="ward" value="Xã Sủng Thài"/>
+			<Item id="2010705" type="ward" value="Xã Sủng Tráng"/>
+			<Item id="2010727" type="ward" value="Xã Thắng Mố"/>
+			<Item id="2010713" type="ward" value="Xã Đông Minh"/>
+			<Item id="2010719" type="ward" value="Xã Đường Thượng"/>
+		</Item>
+		<Item id="20103" type="district" value="Huyện Đồng Văn">
+			<Item id="2010301" type="ward" value="Thị trấn Phó Bảng"/>
+			<Item id="2010305" type="ward" value="Thị trấn Đồng Văn"/>
+			<Item id="2010321" type="ward" value="Xã Hố Quáng Phìn"/>
+			<Item id="2010335" type="ward" value="Xã Lũng Cú"/>
+			<Item id="2010323" type="ward" value="Xã Lũng Phìn"/>
+			<Item id="2010319" type="ward" value="Xã Lũng Thầu"/>
+			<Item id="2010337" type="ward" value="Xã Lũng Táo"/>
+			<Item id="2010303" type="ward" value="Xã Má Lé"/>
+			<Item id="2010315" type="ward" value="Xã Phố Cáo"/>
+			<Item id="2010307" type="ward" value="Xã Phố Là"/>
+			<Item id="2010329" type="ward" value="Xã Sính Lủng"/>
+			<Item id="2010317" type="ward" value="Xã Sảng Tủng"/>
+			<Item id="2010311" type="ward" value="Xã Sủng Là"/>
+			<Item id="2010325" type="ward" value="Xã Sủng Trái"/>
+			<Item id="2010309" type="ward" value="Xã Thài Phìn Tủng"/>
+			<Item id="2010313" type="ward" value="Xã Tả Lủng"/>
+			<Item id="2010327" type="ward" value="Xã Tả Phìn"/>
+			<Item id="2010331" type="ward" value="Xã Vần Chải"/>
+			<Item id="2010333" type="ward" value="Xã Xà Phìn"/>
+		</Item>
+		<Item id="20101" type="district" value="Thị xã Hà Giang">
+			<Item id="2010107" type="ward" value="Phường Minh Khai"/>
+			<Item id="2010105" type="ward" value="Phường Nguyễn Trãi"/>
+			<Item id="2010103" type="ward" value="Phường Ngọc Hà"/>
+			<Item id="2010101" type="ward" value="Phường Quang Trung"/>
+			<Item id="2010115" type="ward" value="Phường Trần Phú"/>
+			<Item id="2010113" type="ward" value="Xã Ngọc Đường"/>
+			<Item id="2010111" type="ward" value="Xã Phương Thiện"/>
+			<Item id="2010109" type="ward" value="Xã Phương Độ"/>
+		</Item>
+	</Item>
+
+</Root>

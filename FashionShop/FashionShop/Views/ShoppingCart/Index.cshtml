@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="full-banner" style="height: 135px">
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="~/home"><i class="fa fa-home"></i></a></li>
+            <li><a>Giỏ hàng</a></li>
+        </ul>
+        <div class="row set_color cart-table">
+            <div id="content" class="col-sm-12 cartContent">
+                <h1>Giỏ hàng</h1>
+                <form>
+                    <div class="table-responsive  margin-top">
+                        <table class="table">
+                            <thead style="font-size: 18px; font-weight:bold">
+                                <tr>
+                                    <td style="width: 10%" class="text-center"></td>
+                                    <td style="width: 10%" class="text-center">Hình ảnh</td>
+                                    <td style="width: 35%" class="text-center">Tên sản phẩm</td>
+                                    <td style="width: 15%" class="text-right">Đơn giá</td>
+                                    <td style="width: 15%" class="text-right">Số lượng</td>
+                                    <td style="width: 15%" class="text-right">Tổng cộng</td>
+                                </tr>
+                            </thead>
+                            <tbody id="cartBody" style="font-size: 16px">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-8">
+                        <table class="table">
+                            <tbody>
+                                <tr style="font-size:16px">
+                                    <td class="text-right cart-table-total-label" ><strong>Tạm tính: </strong></td>
+                                    <td id="tempTotalMoney" class="text-right cart-table-total"></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="pull-left"><a href="~/home" class="btn btn-primary">Tiếp tục mua hàng</a></div>
+                    <div class="pull-right"><a href="~/ShoppingCart/CheckOut" class="btn btn-primary">Thanh toán</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section script{
+    <script id="tplCart">
+        <tr>
+            <td class="text-center" style="vertical-align: middle!important;">
+                <button type="button" title = "" class="btn btn-primary btnDeleteItem" data-id="{{ProductId}}" style = "margin-left: 1px"> 
+                <i class="fa fa-times-circle"></i></button >
+            </td>
+            <td class="text-center" style="vertical-align: middle!important;">
+                            <a href="/Product/Detail/{{ProductId}}" >
+                    <img style="width: 80px" src="{{Image}}" class="img-thumbnail">
+                </a>
+            </td>
+            <td class="text-center" style="vertical-align: middle!important;">
+                <a href="/Product/Detail/{{ProductId}}">{{Name}}</a>
+            </td>
+            <td class="text-right" style="vertical-align: middle!important;">
+                <span style="text-decoration: line-through; font-size: 80%">{{PriceInitial}}</span>
+                <span>{{PriceFormat}}₫</span>
+            </td>
+            <td class="text-right" style = "vertical-align: middle!important;" >
+                <div class="input-group btn-block" style="max-width: 100px; float: right;">
+                    <input type="number" id="quantityProduct_{{ProductId}}" data-id="{{ProductId}}" data-price="{{Price}}" value="{{Quantity}}" class="form-control txtQuantity" >
+                </div>
+            </td>
+            <td id="TotalMoney_{{ProductId}}" class="text-right" style ="vertical-align: middle!important;">{{TotalMoney}}₫</td>
+        </tr>
+    </script>
+}
+

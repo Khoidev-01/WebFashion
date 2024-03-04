@@ -1,0 +1,55 @@
+﻿<div class="card">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size:30px">Danh sách liên hệ</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <div class="row">
+            <div class="col col-md-5">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" ng-model="searchByPhoneNumber" placeholder="Nhập số điện thoại..." aria-label="Recipient's title" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" ng-click="getListContacts()">Tìm kiếm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered table-striped text-center">
+            <thead>
+                <tr class="bg-gradient-dark">
+                    <th style="width: 5%">ID</th>
+                    <th style="width: 15%">Họ và Tên </th>
+                    <th style="width: 10%">Email</th>
+                    <th style="width: 10%">Số điện thoại</th>
+                    <th style="width: 40%">Nội dung</th>
+                    <th style="width: 10%">Trạng thái</th>
+                    <th style="width: 10%">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="contact in listContacts">
+                    <td>{{contact.id}}</td>
+                    <td>{{contact.fullName}}</td>
+                    <td>{{contact.email}}</td>
+                    <td>{{contact.phoneNumber}}</td>
+                    <td>{{contact.content}}</td>
+                    <td>
+                        <span ng-class="{'badge bg-gradient-green': contact.status == true, 'badge bg-gradient-red': contact.status == false}" style="font-size: 14px">{{contact.status | contactFilter}}</span>
+                    </td>
+                    <td ng-if="contact.status == false">
+                        <button class="btn btn-sm btn-success" ng-click="confirmContact(contact.id)">
+                            Xác nhận
+                        </button>
+                    </td>
+                    <td ng-if="contact.status == true">
+                        <button class="btn btn-sm btn-success" ng-click="confirmContact(contact.id)" disabled>
+                            Xác nhận
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <pagination-directive show-to="{{showTo}}" show-from="{{showFrom}}" show-end="{{showEnd}}" page="{{page}}" custom-path="{{customPath}}" pages-count="{{pagesCount}}" total-count="{{totalCount}}" search-func="getListProducts(page)"></pagination-directive>
+</div>

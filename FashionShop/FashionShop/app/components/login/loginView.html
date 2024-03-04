@@ -1,0 +1,52 @@
+﻿<div class="hold-transition login-page" style="min-height: 464px;">
+    <div class="login-box">
+        <!-- /.login-logo -->
+        <div class="card card-outline card-primary">
+            <div class="card-header text-center">
+                <a href="../../index2.html" class="h1"><b>Fashion Shop - </b><span>Admin</span></a>
+            </div>
+            <div class="card-body">
+                <p class="login-box-msg">Vui lòng đăng nhập để sử dụng dịch vụ</p>
+
+                <form role="form" method="post" ng-submit="loginSubmit()">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email" ng-model="loginData.email">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Password" ng-model="loginData.password">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- /.col -->
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+
+                <!--<div class="social-auth-links text-center mt-2 mb-3">
+                    <a href="#" class="btn btn-block btn-primary">
+                        <i class="fab fa-facebook mr-2"></i> Đăng nhập bằng Facebook
+                    </a>
+                    <a href="#" class="btn btn-block btn-danger">
+                        <i class="fab fa-google-plus mr-2"></i> Đăng nhập bằng Google+
+                    </a>
+                </div>-->
+                <!-- /.social-auth-links -->
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+    <!-- /.login-box -->
+</div>

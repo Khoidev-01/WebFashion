@@ -1,0 +1,35 @@
+﻿<div class="card card-default">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size: 30px">Chỉnh sửa quản trị viên</h3>
+    </div>
+
+    <form novalidate name="frmEditAdmin" role="form" ng-submit="editAdmin()">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Vui lòng nhập họ và tên" required ng-model="admin.fullName">
+                <span class="text-danger" ng-show="frmEditAdmin.name.$invalid">Họ và tên không được để trống</span>
+            </div>
+
+
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" class="form-control" id="Email" placeholder="Vui lòng nhập email" required ng-model="admin.email">
+                <span class="text-danger" ng-show="frmEditAdmin.Email.$invalid">Vui lòng nhập đúng email</span>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Số điện thoại</label>
+                <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="Vui lòng nhập số điện thoại" required ng-model="admin.phoneNumber">
+                <span class="text-danger" ng-show="frmEditAdmin.phoneNumber.$invalid">Số điện thoại không được để trống</span>
+            </div>
+
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <button class="btn btn-success" ng-disabled="frmEditAdmin.$invalid">Lưu</button>
+            <button class="btn btn-default float-right" ui-sref="admin_list">Hủy</button>
+        </div>
+    </form>
+</div>
+<!-- /.card -->

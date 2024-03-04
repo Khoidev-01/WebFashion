@@ -1,0 +1,85 @@
+﻿<section class="content">
+    <div class="card-header pt-0">
+        <h3 class="card-title" style="font-size: 30px">Chi tiết đơn hàng</h3>
+        <button class="btn btn-info float-right" ui-sref="order_list">Quay lại</button>
+    </div>
+
+    <!-- Default box -->
+    <div class="card card-solid">
+        <div class="card-body">
+            <div class="post-item row">
+                <div class="col-md-4">
+                    <h3>Thông tin giao hàng</h3>
+                    <p>Mã đơn hàng: {{order.id}}</p>
+                    <p>Tên người nhận: {{order.fullName}}</p>
+                    <p>Số điện thoại: {{order.phoneNumber}}</p>
+                    <p>Tỉnh/Thành: {{order.provinceName}}</p>
+                    <p>Quận/Huyện: {{order.districtName}}</p>
+                    <p>Phường/Xã: {{order.wardName}}</p>
+                    <p>Địa chỉ giao hàng: {{order.address}}</p>
+                    <p>Nội dung đơn hàng: {{order.content}}</p>
+
+                    <p>Loại thanh toán: {{order.typePayment | typePaymentFilter}}</p>
+               
+                </div>
+
+                <div class="col-md-8">
+                    <h3>Thông tin đơn hàng</h3>
+                    <table class="table table-bordered table-striped table-hover text-center">
+                        <thead>
+                            <tr  style="font-weight: bold">
+                                <td>Hình ảnh</td>
+                                <td>Tên sản phẩm</td>
+                                <td>Giá</td>
+                                <td>Số lượng</td>
+                                <td>Tổng cộng</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in order.orderDetails">
+                                <td><img ng-src="{{item.product.image}}" style="height: 80px" /></td>
+                                <td>{{item.product.name}}</td>
+                                <td>{{item.price | formatCurrencyVND}}</td>
+                                <td>{{item.quantity}}</td>
+                                <td>{{item.price * item.quantity | formatCurrencyVND}}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+                <div class="spacer" style="height: 20px"></div>
+            </div>
+
+            <div class="row" style="display: flex; justify-content: end;">
+                <div class="col-sm-4 col-sm-offset-8">
+                    <table class="table">
+                        <tbody>
+                            <tr style="font-size:16px">
+                                <td class="text-left cart-table-total-label"><strong>Tổng tiền hàng: </strong></td>
+                                <td class="text-right cart-table-total">{{totalMoney | formatCurrencyVND}}</td>
+                            </tr>
+                            <tr style="font-size:16px">
+                                <td class="text-left cart-table-total-label"><strong>Phí vận chuyển: </strong></td>
+                                <td class="text-right cart-table-total">{{order.deliveryFee | formatCurrencyVND}}</td>
+                            </tr>
+                            <tr style="font-size:16px">
+                                <td class="text-left cart-table-total-label"><strong>Voucher giảm giá: </strong></td>
+                                <td class="text-right cart-table-total">- {{voucherValue | formatCurrencyVND}}</td>
+                            </tr>
+                            <tr style="font-size:16px">
+                                <td class="text-left cart-table-total-label"><strong>Tổng thanh toán: </strong></td>
+                                <td class="text-right cart-table-total">{{totalPayment | formatCurrencyVND}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+
+</section>

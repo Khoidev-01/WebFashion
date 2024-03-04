@@ -1,0 +1,64 @@
+﻿
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size:30px">Danh sách mã giảm giá</h3>
+        <button type="button" class="btn btn-success float-right" ui-sref="voucher_add">Thêm mã giảm giá</button>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table class="table table-bordered table-striped text-center">
+            <thead>
+                <tr class="bg-gradient-dark">
+                    <th style="width: 2%">ID</th>
+                    <th style="width: 15%">Mã giảm giá</th>
+                    <th style="width: 10%">Giảm theo ₫</th>
+                    <th style="width: 10%">Giảm theo %</th>
+                    <th style="width: 10%">Giá trị giảm</th>
+                    <th style="width: 2%">SL</th>
+                    <th style="width: 13%">Ngày bắt đầu</th>
+                    <th style="width: 13%">Ngày kết thúc</th>
+                    <th style="width: 10%">Hiệu lực</th>
+                    <th style="width: 15%">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="voucher in listVouchers">
+                    <td>{{voucher.id}}</td>
+                    <td>{{voucher.discountCode}}</td>
+                    <td ng-if="voucher.discountAmount == true">
+                        <i class="fa-solid fa-check btn-sm bg-success"></i>
+                    </td>
+                    <td ng-if="voucher.discountAmount == false"></td>
+                    <td ng-if="voucher.discountPercentage == true">
+                        <i class="fa-solid fa-check btn-sm bg-success"></i>
+                    </td>
+                    <td ng-if="voucher.discountPercentage == false"></td>
+                    <td ng-if="voucher.discountAmount == true">
+                        {{voucher.discountValue | formatCurrencyVND}}
+                    </td>
+                    <td ng-if="voucher.discountPercentage == true">
+                        {{voucher.discountValue}}%
+                    </td>
+                    <td>{{voucher.quantity}}</td>
+                    <td>{{voucher.startDate | date: 'dd/MM/yy HH:mm'}}</td>
+                    <td>{{voucher.endDate | date: 'dd/MM/yy HH:mm'}}</td>
+                    <td>
+                        <span ng-class="{'badge bg-gradient-green': voucher.status == true, 'badge bg-gradient-red': voucher.status == false}" style="font-size: 14px">{{voucher.status | lockFilter}}</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-sm btn-primary" ui-sref="voucher_edit({id:voucher.id})">
+                            Sửa
+                        </button>
+                        <button class="btn btn-sm btn-danger" ng-click="deleteVoucher(voucher.id)">
+                            Xóa
+                        </button>
+                        <button class="btn btn-sm btn-info" ui-sref="voucher_detail({id:voucher.id})">
+                            Chi tiết
+                        </button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>

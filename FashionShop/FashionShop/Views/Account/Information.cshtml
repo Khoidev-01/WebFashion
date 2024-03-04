@@ -1,0 +1,57 @@
+﻿@model FashionShop.Models.Domain.User
+@{
+    ViewData["Title"] = "Information";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="full-banner" style="height: 135px">
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="~/Home"><i class="fa fa-home"></i></a></li>
+            <li><a>Xem thông tin tài khoản</a></li>
+        </ul>
+
+        <div class="row featured-block">
+            <div class="main-head-block" style="margin-top: 0">
+                <h2>Xem hông tin tài khoản</h2>
+            </div>
+
+            <div class="post-item row">
+                <div class="list-group col-md-4" id="myList" role="tablist">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#information" role="tab">Xem thông tin cá nhân</a>
+                </div>
+
+                <div class="tab-content col-md-8" style="border-radius: 5px; border: 1px solid #ccc; padding: 10px 15px;">
+                    <div class="tab-pane active" id="information" role="tabpanel">
+                        <p>Họ và tên: @Model.FullName</p>
+                        <p>Email: @Model.Email</p>
+                        <p>Số điện thoại: @Model.PhoneNumber</p>                       
+                    </div>
+                    
+                </div>
+
+                
+                <div class="spacer" style="height: 20px"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section script {
+    <script>
+        $('#myList a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+
+            var elementActive = $('#myList a.active');
+            elementActive.removeClass('active');
+
+            $(this).addClass('active');
+        })
+    </script>
+
+}
+

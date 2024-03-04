@@ -1,0 +1,72 @@
+﻿<div class="card">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size:30px">Danh sách đơn hàng</h3>
+
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <div class="row">
+            <div class="col col-md-2">
+                <select name="category" class="form-control" id="category" ng-model="typePayment">
+                    <option value="">Tất cả hình thức</option>
+                    <option value="1">COD</option>
+                    <option value="2">Chuyển khoản</option>
+                </select>
+            </div>
+
+            <div class="col col-md-10">
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" ng-model="searchByID" placeholder="Nhập mã đơn hàng..." aria-label="Recipient's title" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control" ng-model="searchByName" placeholder="Nhập tên người nhận hàng..." aria-label="Recipient's title" aria-describedby="basic-addon2">
+                    <input type="number" class="form-control" ng-model="searchBySDT" placeholder="Nhập số điện thoại..." aria-label="Recipient's title" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" ng-click="getListOrders()">Tìm kiếm</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <table class="table table-bordered table-striped text-center">
+            <thead>
+                <tr class="bg-gradient-dark">
+                    <th style="width: 5%">ID</th>
+                    <th style="width: 12%">Người nhận</th>
+                    <th style="width: 8%">SĐT</th>
+                    <th style="width: 20%">Địa chỉ</th>
+                    <th style="width: 15%">Ngày đặt</th>
+                    <th style="width: 10%">Đơn giá</th>
+                    <th style="width: 10%">Hình thức</th>
+                    <th style="width: 10%">Trạng thái</th>
+                    <th style="width: 10%">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="order in listOrders">
+                    <td>{{order.id}}</td>
+                    <td>{{order.fullName}}</td>
+                    <td>{{order.phoneNumber}}</td>
+                    <td>{{order.address}}</td>
+                    <td>{{order.orderDate | date: 'dd/MM/yyyy HH:mm:ss'}}</td>
+                    <td>{{order.totalPayment | formatCurrencyVND}}</td>
+                    <td>{{order.typePayment | typePaymentFilter}}</td>
+                    <td>{{order.status | statusOrder}}</td>
+                    <td>
+                        <!--<button class="btn btn-sm btn-success" ng-show="order.status == 1">
+        Xác nhận
+    </button>-->
+                        <button class="btn btn-sm btn-info" ui-sref="order_detail({id:order.id})">
+                            Xem chi tiết
+                        </button>
+
+                        <button class="btn btn-sm btn-default mt-1" ng-click="exportToExcel(order.id)">
+                            Xuất hóa đơn
+                        </button>
+                    </td>
+
+            </tbody>
+        </table>
+
+        <pagination-directive show-to="{{showTo}}" show-from="{{showFrom}}" show-end="{{showEnd}}" page="{{page}}" custom-path="{{customPath}}" pages-count="{{pagesCount}}" total-count="{{totalCount}}" search-func="getListOrders(page)"></pagination-directive>
+    </div>
+</div>
+

@@ -1,0 +1,280 @@
+@using FashionShop.Helper;
+@using FashionShop.Models.Domain;
+@using FashionShop.Models.ViewModel;
+@using Newtonsoft.Json;                
+@using FashionShop.Data;
+@using FashionShop.Repositories;
+@using Microsoft.AspNetCore.Http;
+@using Microsoft.EntityFrameworkCore;
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    Layout = null;
+    string userJson = HttpContextAccessor.HttpContext.Session.GetString(CommonConstants.SessionUser);
+    User user = null;
+    if (userJson != null)
+    {
+        user = JsonConvert.DeserializeObject<User>(userJson);
+    }
+
+    //Kết nối db để hiển thị tất cả danh sách category
+    string connectionString = "Data Source=PLAT1NER;Initial Catalog=FashionShop; User ID=sa;Password=12345;TrustServerCertificate=True";
+    
+    DbContextOptions<FashionShopDBContext> options;
+    options = new DbContextOptionsBuilder<FashionShopDBContext>()
+                .UseSqlServer(connectionString)
+                .Options;
+
+    FashionShopDBContext fashionShopDbContext = new FashionShopDBContext(options);
+    ICategoryRepository _categoryRepository = new CategoryRepository(fashionShopDbContext);
+
+    var allCategory = _categoryRepository.GetAllCategory();
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="~/assets/admin/libs/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet" />
+
+    <!--custom css-->
+    <link href="~/assets/customer/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/customer/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/customer/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/customer/css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <!--jquery-ui css-->
+    <link href="~/assets/customer/lib/jquery-ui/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+
+    <!--sweetalert2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css" integrity="sha512-IScV5kvJo+TIPbxENerxZcEpu9VrLUGh1qYWv6Z9aylhxWE4k4Fch3CHl0IYYmN+jrnWQBPlpoTVoWfSMakoKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <a href="javascript:void(0);" id="scroll" style="display: none;">
+        <span>
+            <i class="fa fa-chevron-circle-up"></i>
+        </span>
+    </a>
+    <div id="page">
+        <header class="header-container">
+            <div class="container">
+                <div class="top-row">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <div id="logo">
+                                <a href="~/Home">FashionShop</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-12" style="color: blue">
+                        </div>
+
+                        <div class="col-md-2 col-sm-3 col-xs-12">
+                            <div class="contact">
+                                <span>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a href="tel:+0123456789">0123456789</a>
+                                </span>
+                            </div>
+                        </div>
+                        @using (Html.BeginForm("SearchProductByName", "Home", FormMethod.Post))
+                        {
+                            <div class="col-md-offset-0 col-md-4 col-sm-offset-0 col-sm-3 col-xs-offset-3 col-xs-6">
+                                <div id="search" class="input-group">
+                                
+                                        <input type="text" id="txtKeyword" name="keyword" value="@ViewBag.keyword" placeholder="Nhập tên sản phẩm" class="form-control input-lg search-box">
+                                        <span class="input-group-btn">
+                                            <button type="submit" id="btnSearch" class="btn-lg search-button">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                </div>
+                            </div>
+                         }
+                        <div class="col-md-2 col-sm-1 col-xs-12" style="padding-top: 3px; text-align: end">
+                            <div class="shopping-cart">
+                                <a href="~/ShoppingCart">
+                                    <i class="fa-solid fa-cart-shopping fa-2xl" aria-hidden="true">
+                                        <span class="cartLength" style="margin-left: 3px"></span>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--navigation--->
+            <section class="main-nav-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-5 col-xs-3 logo-fix">
+                            <div id="logo">
+                                <a href="~/Home">FashionShop</a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-6 col-xs-6">
+                            <nav class="menu-bar">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <!--                                    <span class="">Menu</span>-->
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+
+                                        <!--                                    <a class="navbar-brand" href="#">WebSiteName</a>-->
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="myNavbar">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="~/Home">Trang chủ</a></li>
+                                            <li class="product_menu">
+                                                <a href="javascript:void(0)">
+                                                    Sản phẩm<span class="fa fa-angle-down"></span>
+                                                </a>
+
+                                                @Html.Partial("_PartialViewCategory", allCategory)
+
+                                             </li>
+                                            <li><a href="~/Post">Bài viết</a></li>
+                                            <li><a href="~/Contact">Liên hệ</a></li> 
+                                            @if (user != null)
+                                            {
+                                                <li class="account_menu">
+                                                    <a href="javascript:void(0)">
+                                                        @user.FullName<span class="fa fa-angle-down"></span>
+                                                    </a>
+                                                    <ul class="account_item">
+                                                        <li>
+                                                            <a href="~/Account/Information">Thông tin tài khoản</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="~/Account/OrderList">Danh sách đơn hàng</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="~/Account/FavoriteList">Danh sách yêu thích</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a  href="~/Account/Logout">Đăng xuất</a></li>
+                                            }
+                                            else
+                                            {
+                                                <li><a href="~/Account/Login">Đăng nhập</a></li>
+                                                <li><a href="~/Account/Register">Đăng ký</a></li>
+                                            }
+   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="col-md-1 col-sm-1 col-xs-3">
+                            <a href="~/ShoppingCart">
+                                <span class="cart-fix">
+                                    <i class="fa-solid fa-cart-shopping fa-2xl" aria-hidden="true">
+                                        <span class="cartLength" style="margin-left: 3px"></span>
+                                    </i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--end--->
+        </header>
+       
+        <!--main content--->
+
+        @RenderBody()
+        
+
+        <div class="divider"></div>
+        <!--footer--->
+        <footer>
+            <div class="container">
+                <div class="row footer-main-block">
+                    <div class="col-sm-3">
+                        <div class="footer-block">
+                            <h4>Thông tin <i class="fa fa-angle-up"></i></h4>
+
+                             <ul class="list-unstyled">
+                                 <li><a>Giới thiệu về chúng tôi</a></li>
+                                 <li><a>Thông tin giao hàng</a></li>
+                                 <li><a>Chính sách quyền riêng tư</a></li>
+                                 <li><a>Điều khoản &amp; Điều kiện</a></li>
+                             </ul>
+
+                         </div>
+                     </div>
+                     <div class="col-sm-3">
+                         <div class="footer-block">
+                             <h4>Tính năng bổ sung <i class="fa fa-angle-up"></i></h4>
+                             <ul class="list-unstyled">
+                                 <li><a>Liên hệ với chúng tôi</a></li>
+                                 <li><a>Trả về</a></li>
+                                 <li><a>Sơ đồ trang web</a></li>
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="col-sm-3">
+                         <div class="footer-block">
+                             <h4>Dịch vụ <i class="fa fa-angle-up"></i></h4>
+                             <ul class="list-unstyled">
+                                 <li><a>Thương hiệu</a></li>
+                                 <li><a>Phiếu quà tặng</a></li>
+                                 <li><a>Các chi nhánh</a></li>
+                                 <li><a>Đặc biệt</a></li>
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="col-sm-3">
+                         <div class="footer-block">
+                             <h4>Tài khoản của tôi<i class="fa fa-angle-up"></i></h4>
+                             <ul class="list-unstyled">
+                                 <li><a>Tài khoản của tôi</a></li>
+                                 <li><a>Lịch sử đặt hàng</a></li>
+                                 <li><a>Danh sách mong muốn</a></li>
+                                 <li><a>Bản tin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <!--Do not remove Backlink from footer of the template. To remove it you can purchase the Backlink !-->
+                    © 2024 All right reserved. Designed by
+                    <a href="http://www.themevault.net/" target="_blank">ThemeVault.</a>
+                </div>
+            </div>
+        </footer>
+        <!---end -->
+    </div>
+    <!--end--->
+    <!--js --->
+    <script src="~/assets/customer/js/jquery.min.js" type="text/javascript"></script>
+    <script src="~/assets/customer/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/assets/customer/js/custom.js" type="text/javascript"></script>
+   
+    <script src="~/assets/customer/lib/jquery-ui/jquery-ui.js"></script>
+    <script src="~/assets/customer/lib/numeral/numeral.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.0.0/mustache.min.js" integrity="sha512-ILe+2LfkNmkbAHLz7DrbdJZLhqUY+SGK+CnM5IrXl6WoMTQcWIx5slRmiOCsXwnA61pNeJJb0aoF6UNDWjQRbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="~/assets/customer/js/controller/favoriteproductcontroller.js"></script>
+    <script src="~/assets/customer/js/controller/accountcontroller.js"></script>
+    <script src="~/assets/customer/js/controller/common.js"></script>
+    <script src="~/assets/customer/js/controller/productcontroller.js"></script>
+    <script src="~/assets/customer/js/controller/commentcontroller.js"></script>
+
+    @RenderSection("script", false)
+    <script src="~/assets/customer/js/controller/cartshoppingcontroller.js"></script>
+
+    @await Component.InvokeAsync("Notyf")
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js" integrity="sha512-3PL7jW3xI1EjF2Hfqwv5u6nKG/BnUbWytnJDhsY/q5CbIB5XzoHNhJvgmFeVD7xgC9DbKDm+gPP9uDAAfLAZUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

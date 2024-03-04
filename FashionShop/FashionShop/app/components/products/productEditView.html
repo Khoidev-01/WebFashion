@@ -1,0 +1,93 @@
+﻿<div class="card card-default">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size: 30px">Chỉnh sửa sản phẩm</h3>
+    </div>
+
+    <form novalidate name="frmEditProduct" role="form" ng-submit="updatePoduct()">
+        <div class="card-body">
+            <div class="row">
+                <div class="form-group col-5">
+                    <label for="name">Tên sản phẩm</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Vui lòng nhập tên" required ng-model="product.name">
+                    <span class="text-danger" ng-show="frmEditProduct.name.$invalid">Tên sản phẩm không được để trống</span>
+                </div>
+
+                <div class="form-group col-3">
+                    <label for="category">Danh mục</label>
+                    <select name="category" class="form-control" id="category" ng-model="product.categoryID" required ng-options="option.id as option.name for option in listAllCategory">
+                    </select>
+                    <span class="text-danger" ng-show="frmEditProduct.category.$invalid">Vui lòng chọn danh mục</span>
+                    <input type="hidden" name="category" ng-model="product.categoryID">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-3">
+                    <label for="purchasePrice">Giá nhập (₫)</label>
+                    <input type="number" name="purchasePrice" class="form-control" id="purchasePrice" placeholder="Vui lòng nhập giá" required ng-model="product.purchasePrice">
+                    <span class="text-danger" ng-show="frmEditProduct.purchasePrice.$invalid">Giá nhập không được để trống</span>
+                </div>
+
+                <div class="form-group col-3">
+                    <label for="Price">Giá bán (₫)</label>
+                    <input type="number" name="Price" class="form-control" id="Price" placeholder="Vui lòng nhập giá" required ng-model="product.price">
+                    <span class="text-danger" ng-show="frmEditProduct.Price.$invalid">Giá bán không được để trống</span>
+                </div>
+
+                <div class="form-group col-3">
+                    <label for="discount">Giảm giá (%)</label>
+                    <input type="number" name="discount" class="form-control" id="discount" placeholder="Vui lòng nhập giảm giá" required ng-model="product.discount">
+                    <span class="text-danger" ng-show="frmEditProduct.discount.$invalid">Giảm giá không được để trống</span>
+                </div>
+
+                <div class="form-group col-3">
+                    <label for="quantity">Số lượng</label>
+                    <input type="number" name="quantity" class="form-control" id="quantity" placeholder="Vui lòng nhập số lượng" required ng-model="product.quantity">
+                    <span class="text-danger" ng-show="frmEditProduct.quantity.$invalid">Số lượng không được để trống</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="describe">Mô tả</label>
+                <textarea name="describe" class="form-control" id="describe" placeholder="Vui lòng nhập mô tả sản phẩm" required ckeditor="ckeditorContent" ng-model="product.describe"></textarea>
+                <span class="text-danger" ng-show="frmEditProduct.describe.$invalid">Mô tả sản phẩm không được để trống</span>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Hình ảnh chính</label>
+                <div ng-show="product.image">
+                    <img src="{{product.image}}" class="d-block" style="width: 150px" />
+                </div>
+                <input type="text" name="image" class="form-control mt-1" id="image" required ng-model="product.image">
+                <button type="button" class="btn btn-default mt-1" ng-model="product.image" ng-click="chooseImage()">Chọn ảnh</button>
+                <span class="text-danger d-block" ng-show="frmEditProduct.image.$invalid">Vui lòng chọn ảnh</span>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Hình ảnh phụ</label>
+                <ul class="d-flex flex-row list-unstyled">
+                    <li ng-repeat="img in listImages" class="mr-3">
+                        <img ng-src="{{img}}" class="d-block" style="width: 100px" />
+                        <div style="text-align: center;">
+                            <i class="fa-regular fa-circle-xmark" style="cursor: pointer" ng-click="removeImage(img)"></i>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-default mt-1" ng-click="chooseListImage()">Chọn ảnh</button>
+            </div>
+
+            <div class="form-group mb-0">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="status" class="custom-control-input" id="status" ng-model="product.status" ng-checked="product.status">
+                    <label class="custom-control-label" style="cursor: pointer" for="status">Hiển thị</label>
+                </div>
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <button class="btn btn-success" ng-disabled="frmEditProduct.$invalid">Lưu</button>
+            <button class="btn btn-default float-right" ui-sref="product_list">Hủy</button>
+        </div>
+    </form>
+</div>
+<!-- /.card -->

@@ -1,0 +1,73 @@
+﻿@using FashionShop.Data;
+@using FashionShop.Helper;
+@using FashionShop.Models;
+@using FashionShop.Models.Domain;
+@using FashionShop.Repositories;
+@using Microsoft.AspNetCore.Http
+@using Microsoft.EntityFrameworkCore;
+@using Newtonsoft.Json;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@model dynamic;
+
+@{
+    string userJson = HttpContextAccessor.HttpContext.Session.GetString(CommonConstants.SessionUser);
+    User user = null;
+    if (userJson != null)
+    {
+        user = JsonConvert.DeserializeObject<User>(userJson);
+    }
+
+    //Kết nối db để hiển thị tất cả danh sách category
+    string connectionString = "Data Source=PLAT1NER;Initial Catalog=FashionShop; User ID=sa;Password=12345;TrustServerCertificate=True";
+
+    DbContextOptions<FashionShopDBContext> options;
+    options = new DbContextOptionsBuilder<FashionShopDBContext>()
+                .UseSqlServer(connectionString)
+                .Options;
+
+    FashionShopDBContext fashionShopDbContext = new FashionShopDBContext(options);
+    ICommentRepository _commentRepository = new CommentRepository(fashionShopDbContext);
+
+    var listComment = _commentRepository.GetListComment(Model.parentID, Model.productID);
+}
+
+@foreach (var itemComment in listComment)
+{
+    <li class="comment" style="display: flex; margin-bottom: 25px;">
+        <div class="avatar-image-container" style="padding-right: 15px;">
+            <img src="/Assets/Admin/img/avatar6.jpeg" alt="" style="max-width: 36px;">
+        </div>
+        <div class="comment-block">
+            <div class="comment-header">
+                <span class="user" style="margin-right: 20px;">
+                    <b>@itemComment.FullName</b>
+                </span>
+                <span class="icon user blog-author"></span>
+                <span class="datetime secondary-text">
+                    @itemComment.CreatedDate.ToString("dd/MM/yyyy hh:mm tt")
+                </span>
+            </div>
+            <p class="comment-content" style="margin: 5px 0;">@itemComment.Content</p>
+
+            @if (user != null)
+            {
+                <div class="comment-actions secondary-text" style="width: 450px">
+
+                    <div id="commentreply-@itemComment.ID" class="bg-light collapse">
+                        <textarea name="" class="form-control" id="txtContent_@itemComment.ID" placeholder="Viết bình luận"></textarea>
+                        <button type="submit" class="btn btn-primary btnReply" style="margin-top: 15px;" data-productid="@itemComment.ProductID" data-userid="@user.Id" data-parentid="@itemComment.ID" data-content="txtContent_@itemComment.ID">Bình luận</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </li>
+
+    <div style="margin-left: 25px">
+        @await Html.PartialAsync("_ChildComment", new {parentID = itemComment.ID , productID = itemComment.ProductID})
+    </div>
+
+}
+
+
+

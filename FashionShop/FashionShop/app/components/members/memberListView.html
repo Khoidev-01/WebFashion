@@ -1,0 +1,57 @@
+﻿<div class="card">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size:30px">Danh sách nhân viên</h3>
+        <button type="button" class="btn btn-success float-right" ui-sref="member_add">Thêm nhân viên</button>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <div class="row">
+            <div class="col col-md-5">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" ng-model="searchByName" placeholder="Nhập tên nhân viên..." aria-label="Recipient's title" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" ng-click="getlistMembers()">Tìm kiếm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-bordered table-striped text-center">
+            <thead>
+                <tr class="bg-gradient-dark">
+                    <th style="width: 27%">ID</th>
+                    <th style="width: 15%">Họ tên</th>
+                    <th style="width: 20%">Email</th>
+                    <th style="width: 10%">Số điện thoại</th>
+                    <th style="width: 10%">Khóa</th>
+                    <th style="width: 18%">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="member in listMembers">
+                    <td>{{member.id}}</td>
+                    <td>{{member.fullName}}</td>
+                    <td>{{member.email}}</td>
+                    <td>{{member.phoneNumber}}</td>
+                    <td>
+                        <span ng-class="{'badge bg-gradient-green': member.lockoutEnabled == false, 'badge bg-gradient-red': member.lockoutEnabled == true}" style="font-size: 14px">{{member.lockoutEnabled | lockFilter}}</span>
+                    </td>
+                    <td style="text-align: left">
+                        <button class="btn btn-sm btn-primary mr-2 ml-3" ui-sref="member_edit({id:member.id})">
+                            Sửa
+                        </button>
+                        <button class="btn btn-sm btn-danger mr-2" ng-click="deleteMember(member.id)">
+                            Xóa
+                        </button>
+                        <button class="btn btn-sm btn-warning" ng-click="lockMember(member.id)" ng-if="member.lockoutEnabled == false">
+                            Khóa
+                        </button>
+                        <button class="btn btn-sm btn-warning" ng-click="unlockMember(member.id)" ng-if="member.lockoutEnabled == true">
+                            Mở khóa
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

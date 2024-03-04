@@ -1,0 +1,88 @@
+﻿<div class="card card-default">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size: 30px">Chỉnh sửa mã giảm giá</h3>
+    </div>
+
+    <form novalidate name="frmEditVoucher" role="form" ng-submit="editVoucher()">
+        <div class="card-body">
+            <div class="row">
+                <div class="form-group col-4">
+                    <label for="discountCode">Mã giảm giá</label>
+                    <input type="text" name="discountCode" class="form-control" id="discountCode" placeholder="Vui lòng nhập mã giảm giá" required ng-model="voucher.discountCode">
+                    <span class="text-danger" ng-show="frmEditVoucher.discountCode.$invalid">Mã giảm giá không được để trống</span>
+                </div>
+
+                <div class="form-group col-4" style="text-align: center">
+                    <label for="discounttype">Loại giảm giá</label>
+                    <div class="form-check" style="cursor: pointer">
+                        <input class="form-check-input" type="checkbox" name="flexradiodefault" id="flexradiodefault1" style="cursor: pointer" ng-model="voucher.discountAmount" ng-change="voucher.discountPercentage = !voucher.discountAmount">
+                        <label class="form-check-label" for="flexradiodefault1" style="cursor: pointer">
+                            Giảm giá theo ₫
+                        </label>
+                    </div>
+                    <div class="form-check" style="cursor: pointer">
+                        <input class="form-check-input" type="checkbox" name="flexradiodefault" id="flexradiodefault2" style="cursor: pointer" ng-model="voucher.discountPercentage" ng-change="voucher.discountAmount = !voucher.discountPercentage">
+                        <label class="form-check-label" for="flexradiodefault2" style="cursor: pointer">
+                            Giảm giá theo %
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group col-4" ng-show="voucher.discountAmount == true">
+                    <label for="Price">Số tiền giảm ₫</label>
+                    <input type="number" name="Price" class="form-control" id="Price" placeholder="Vui lòng nhập số tiền giảm" required ng-model="voucher.discountValue">
+                    <span class="text-danger" ng-show="frmEditVoucher.Price.$invalid">Số tiền giảm không được để trống</span>
+                </div>
+
+                <div class="form-group col-4" ng-show="voucher.discountPercentage == true">
+                    <label for="Price">Phần trăm giảm %</label>
+                    <input type="number" name="Price" class="form-control" id="Price" placeholder="Vui lòng nhập phần trăm giảm" required ng-model="voucher.discountValue">
+                    <span class="text-danger" ng-show="frmEditVoucher.Price.$invalid">Phần trăm giảm không được để trống</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-3">
+                    <label for="minimumValue">Giá trị tối thiểu của đơn hàng</label>
+                    <input type="number" name="minimumValue" class="form-control" id="minimumValue" placeholder="Vui lòng nhập giá trị tối thiểu của đơn hàng" required ng-model="voucher.minimumValue">
+                    <span class="text-danger" ng-show="frmEditVoucher.minimumValue.$invalid">Giá trị tối thiểu không được để trống</span>
+                </div>
+
+                <div class="form-group col-3">
+                    <label for="quantity">Số lượng</label>
+                    <input type="number" name="quantity" class="form-control" id="quantity" placeholder="Vui lòng nhập số lượng" required ng-model="voucher.quantity">
+                    <span class="text-danger" ng-show="frmEditVoucher.quantity.$invalid">Số lượng không được để trống</span>
+                </div>
+
+                <div class="form-group col-3">
+                    <label for="startDate">Ngày bắt đầu</label>
+                    <input type="datetime-local" name="startDate" class="form-control" id="startDate" placeholder="Vui lòng chọn ngày bắt đầu" required ng-model="voucher.startDate">
+                </div>
+
+                <div class="form-group col-3">
+                    <label for="endDate">Ngày kết thúc</label>
+                    <input type="datetime-local" name="endDate" class="form-control" id="endDate" placeholder="Vui lòng chọn ngày kết thúc" required ng-model="voucher.endDate">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="describe">Mô tả</label>
+                <textarea name="describe" class="form-control" id="describe" placeholder="Vui lòng nhập mô tả mã giảm giá" ng-model="voucher.describe" style="height: 150px"></textarea>
+            </div>
+
+
+            <div class="form-group mb-0">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="status" class="custom-control-input" id="status" ng-model="voucher.status" ng-checked="voucher.status">
+                    <label class="custom-control-label" style="cursor: pointer" for="status">Có hiệu lực</label>
+                </div>
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <button class="btn btn-success" ng-disabled="frmEditVoucher.$invalid">Lưu</button>
+            <button class="btn btn-default float-right" ui-sref="voucher_list">Hủy</button>
+        </div>
+    </form>
+</div>
+<!-- /.card -->

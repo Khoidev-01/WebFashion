@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "numeral.js@2.0.6",
+      "destination": "assets/customer/lib/numeral"
+    },
+    {
+      "library": "jqueryui@1.13.2",
+      "destination": "assets/customer/lib/jquery-ui"
+    },
+    {
+      "library": "angular-chart.js@1.1.1",
+      "destination": "assets/admin/libs/angular-chart"
+    },
+    {
+      "library": "Chart.js@4.4.0",
+      "destination": "assets/admin/libs/Chart"
+    }
+  ]
+}

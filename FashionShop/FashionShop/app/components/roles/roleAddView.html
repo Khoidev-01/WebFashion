@@ -1,0 +1,24 @@
+﻿<div class="card card-default">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size: 30px">Thêm vai trò</h3>
+    </div>
+
+    <form novalidate name="frmAddRole" role="form" ng-submit="addRole()">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="name">Tên</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nhập tên" required ng-model="role.name">
+                <span class="text-danger" ng-show="frmAddRole.name.$invalid">Vui lòng nhập tên</span>
+            </div>
+
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <button class="btn btn-success" ng-disabled="frmAddRole.$invalid">Thêm</button>
+
+            <button class="btn btn-default float-right" ui-sref="role_list">Hủy</button>
+
+        </div>
+    </form>
+</div>
+<!-- /.card -->

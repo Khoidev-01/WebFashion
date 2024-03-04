@@ -1,0 +1,65 @@
+﻿@model FashionShop.Models.Domain.Contact
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="full-banner" style="height: 135px">
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="~/Home"><i class="fa fa-home"></i></a></li>
+            <li><a>Liên hệ</a></li>
+        </ul>
+        <div class="row login-page" >
+            <div class="col-sm-6" id="content">
+                <div class="row">
+                    
+                    <div class="well">
+                        <h3>Liên hệ</h3>
+                        <p><strong>Vui lòng điền đầy đủ thông tin để được phản hồi nhanh nhất</strong></p>
+                        @*<form method="post">*@
+                        @*<form asp-controller="Contact" asp-action="Index" method="post" >*@
+                        <form asp-action="Index" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                               <label for="input-fullname" class="control-label">Họ và tên</label>
+                                <input type="text" asp-for="FullName" class="form-control" id="input-fullname" placeholder="Nhập họ và tên" value="" name="FullName">
+                                <span asp-validation-for ="FullName" class="text-danger"></span>
+                                @*<label class="control-label">Họ và tên</label>
+                                <input type="text" asp-for="FullName" placeholder="Họ và tên" class="form-control" />
+                                <span asp-validation-for="FullName" class="text-danger"></span>*@
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Nhập Email</label>
+                                <input type="email" asp-for="Email" id="input-email" name="email" placeholder="Địa chỉ email" class="form-control" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                               @* <label for="input-email" class="control-label">E-Mail</label>*@
+                                @*<input type="email" class="form-control" id="input-email" placeholder="Nhập E-Mail" value="" name="email">*@
+                            </div>
+                            <div class="form-group">
+                                @*<label for="input-phonenumber" class="control-label">Số điện thoại</label>
+                                <input type="tel" asp-for="PhoneNumber" class="form-control" id="input-phonenumber" placeholder="Nhập số điện thoại" value="" name="phonenumber">*@
+                                <label for="input-phonenumber" class="control-label">Số điện thoại</label>
+                                <input type="number" asp-for="PhoneNumber" class="form-control" id="input-phonenumber" value="" name="phonenumber" placeholder="Nhập số điện thoại">
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-content" class="control-label">Nội dung</label>
+                                <textarea class="form-control" id="input-content" placeholder="Nhập nội dung" value="" name="content" style="height: 100px;"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary" value="Gửi" style="width:100%;">
+   
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

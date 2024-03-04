@@ -1,0 +1,24 @@
+﻿<div class="card card-default">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size: 30px">Chỉnh sửa danh mục sản phẩm</h3>
+    </div>
+
+    <form novalidate name="frmEditCategory" role="form" ng-submit="editCategory()">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" required ng-model="category.name">
+                <span class="text-danger" ng-show="frmEditCategory.name.$invalid">Vui lòng nhập tên</span>
+            </div>
+
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <button class="btn btn-success" ng-disabled="frmEditCategory.$invalid">Lưu</button>
+
+            <button class="btn btn-default float-right" ui-sref="category_list">Hủy</button>
+
+        </div>
+    </form>
+</div>
+<!-- /.card -->

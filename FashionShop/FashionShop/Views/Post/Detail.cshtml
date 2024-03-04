@@ -1,0 +1,36 @@
+﻿@model FashionShop.Models.DTO.PostDTO
+
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="full-banner" style="height: 135px">
+</div>
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="~/Home"><i class="fa fa-home"></i></a></li>
+        <li><a>Chi tiết bài viết</a></li>
+        <li style="float: right;">
+            <a href="~/Post">Quay lại</a>
+        </li>
+    </ul>
+
+    <div class="row featured-block">
+        <div class="main-head-block" style="margin-top: 0">
+            <h2>@Model.Title</h2>
+        </div>
+        <div class="image-block">
+            <a href="single-post.html" style="cursor: pointer">
+                <center><img class="post-image" alt="i" src="~/@Model.Image"/></center>
+                
+            </a>
+        </div>
+        <div class="spacer" style="height: 20px"></div>
+        <div class="post-content">
+            <p>@Model.Content</p>
+        </div>
+        
+    </div>
+</div>

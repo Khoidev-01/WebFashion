@@ -1,0 +1,49 @@
+﻿@model List<FashionShop.Models.DTO.PostDTO>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="full-banner" style="height: 135px">
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="~/Home"><i class="fa fa-home"></i></a></li>
+            <li><a>Bài viết</a></li>
+        </ul>
+
+        <div class="row featured-block">
+            <div class="main-head-block" style="margin-top: 0">
+                <h2>Danh sách bài viết</h2>
+            </div>
+
+            @foreach (var post in Model)
+            {
+                <div class="post-item">
+                    <div class="col-md-3 col-sm-4 col-xs-6 mb-30 col-xs-offset-1 width-300">
+                        <div style="text-align: center">
+                            <div class="image-block">
+                                <a href="@Url.Action("Detail", "Post", new { id = post.ID })" style="cursor: pointer">
+                                    <img class="post-image" alt="i" src="@post.Image" style="width: 250px; height: 125px" />
+                                </a>
+                            </div>
+                            <div class="title-block">
+                                <a href="@Url.Action("Detail", "Post", new { id = post.ID })" style="cursor: pointer">
+                                    <h4 class="post-title">
+                                        <b>@post.Title</b>
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="effect-shadow">
+                            <a href="~/Post/Detail/@post.ID" style="display: block;  width: 100%; height: 100%;"></a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

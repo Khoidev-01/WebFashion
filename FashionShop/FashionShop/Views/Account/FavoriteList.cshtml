@@ -1,0 +1,111 @@
+﻿@model List<FashionShop.Models.DTO.FavoriteProductDTO.GetFavoriteProductByUserIdDTO>
+@{
+    ViewData["Title"] = "FavoriteList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="full-banner" style="height: 135px">
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="~/Home"><i class="fa fa-home"></i></a></li>
+            <li><a>Danh sách yêu thích</a></li>
+        </ul>
+
+        <div class="row featured-block">
+            <div class="main-head-block" style="margin-top: 0">
+                <h2>Danh sách yêu thích</h2>
+            </div>
+
+            @if (Model.Count > 0)
+            {
+                @foreach (var pro in Model)
+                {
+                    decimal price = Convert.ToDecimal(@pro.ProductDTO.Price);
+                    decimal discount = Convert.ToDecimal(@pro.ProductDTO.Discount);
+                    decimal discountedPrice = price - (price * discount / 100);
+                    string formattedPrice = price.ToString("N0") + "đ";
+                    string formattedPriceHasDiscount = discountedPrice.ToString("N0") + "đ";
+
+                    if (pro.ProductDTO.Discount > 0)
+                    {
+                        <div class="col-md-2 col-sm-6 col-xs-6 mb-30 width-100">
+                            <div class="product-thumb effect-shadow">
+                                <div class="product-view-block">
+                                    <div class="button-block">
+                                        <a style="color: red" class="btnDeleteProductFavorite" data-id="@pro.ProductDTO.ID"> <i class="fa fa-heart"></i></a>
+                                        @*<a><i class="fa fa-random" aria-hidden="true"></i></a>*@
+                                        <a href="javascript:void(0);" class="btnAddToCart" data-id="@pro.ProductDTO.ID"><i class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                    <div class="price-view-block">
+                                        <span class="price-left">@pro.ProductDTO.Discount%</span>
+                                    </div>
+
+                                    <div class="image-block">
+                                        <a href="single-product.html" style="cursor: pointer">
+                                            <img class="img-responsive" alt="i" src="/@pro.ProductDTO.Image">
+                                        </a>
+                                    </div>
+
+
+                                    <div style="margin: 0px 5px;text-align: center;">
+                                        <p class="m-0 product-name-limit-line">
+                                            @pro.ProductDTO.Name
+                                        </p>
+
+                                        <span style="text-decoration: line-through; font-size: 80%; margin-right: 5px">
+                                            @formattedPrice
+                                        </span>
+
+                                        <span>
+                                            @formattedPriceHasDiscount
+                                        </span>
+                                    </div>
+                                    <div class="effect-shadow">
+                                        <a href="~/Product/Detail/@pro.ProductDTO.ID" style="display: block; width: 100%; height: 100%;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-md-2 col-sm-6 col-xs-6 mb-30 width-100">
+                            <div class="product-thumb effect-shadow">
+                                <div class="product-view-block">
+                                    <div class="button-block">
+                                        <a style="color: red" class="btnDeleteProductFavorite" data-id="@pro.ProductDTO.ID"> <i class="fa fa-heart"></i></a>
+                                        @*<a><i class="fa fa-random" aria-hidden="true"></i></a>*@
+                                        <a href="javascript:void(0);" class="btnAddToCart" data-id="@pro.ProductDTO.ID"><i class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                    <div class="image-block">
+                                        <a href="single-product.html" style="cursor: pointer">
+                                            <img class="img-responsive" alt="i" src="/@pro.ProductDTO.Image">
+                                        </a>
+                                    </div>
+                                    <div style="margin: 0px 5px;text-align: center;">
+                                        <p class="m-0 product-name-limit-line">
+                                            @pro.ProductDTO.Name
+                                        </p>
+                                        <span>
+                                            @formattedPrice
+                                        </span>
+                                    </div>
+                                    <div class="effect-shadow">
+                                        <a href="~/Product/Detail/@pro.ProductDTO.ID" style="display: block; width: 100%; height: 100%;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            }
+            else
+            {
+                <h3 style="text-align: center; color: red">Hiện tại chưa có sản phẩm nào trong danh sách yêu thích</h3>
+            }
+        </div>
+    </div>
+</div>

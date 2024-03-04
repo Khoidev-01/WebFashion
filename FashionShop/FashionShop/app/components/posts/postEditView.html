@@ -1,0 +1,48 @@
+﻿<div class="card card-default">
+    <div class="card-header">
+        <h3 class="card-title" style="font-size: 30px">Chỉnh sửa bài viết</h3>
+    </div>
+
+    <form novalidate name="frmEditPost" role="form" ng-submit="updatePost()">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="title">Tiêu đề</label>
+                <input type="text" name="title" class="form-control" id="title" placeholder="Nhập tiêu đề" required ng-model="post.title">
+                <span class="text-danger" ng-show="frmEditPost.title.$invalid">Tiêu đề không được để trống</span>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Nội dung</label>
+                <textarea name="content" class="form-control" id="content" placeholder="Nhập nội dung" required ng-model="post.content" style="height: 300px"></textarea>
+                <span class="text-danger" ng-show="frmEditPost.content.$invalid">Nội dung không được để trống</span>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Hình ảnh</label>
+                <div ng-show="post.image">
+                    <img src="{{post.image}}" class="d-block" style="width: 200px" />
+                </div>
+                <input type="text" name="image" class="form-control mt-1" id="image" required ng-model="post.image">
+                <button type="button" class="btn btn-default mt-1" ng-model="post.image" ng-click="chooseImage()">Chọn hình ảnh</button>
+                <span class="text-danger" ng-show="frmEditPost.image.$invalid">Vui lòng chọn hình ảnh</span>
+            </div>
+
+
+            <div class="form-group mb-0">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="status" class="custom-control-input" id="status" ng-model="post.status" ng-checked="post.status">
+                    <label class="custom-control-label" style="cursor: pointer" for="status">Hiển thị</label>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <button class="btn btn-success" ng-disabled="frmEditPost.$invalid">Lưu</button>
+
+            <button class="btn btn-default float-right" ui-sref="post_list">Hủy</button>
+
+        </div>
+    </form>
+</div>
+<!-- /.card -->

@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trang quản trị</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <!-- Font Awesome -->
+    <link href="~/assets/admin/libs/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet" />
+    
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/assets/Admin/css/adminlte.min.css">
+
+    <!-- Toast css -->
+    <link href="~/assets/admin/libs/toastr/build/toastr.css" rel="stylesheet" />
+
+    <!-- angular-chart css -->
+    <link href="~/assets/admin/libs/angular-chart.js/dist/angular-chart.css" rel="stylesheet" />
+</head>
+<body class="hold-transition sidebar-mini" ng-app="FashionShop" ng-controller="rootController">
+    
+    <div ui-view></div>
+
+
+    <!-- jQuery -->
+    <script src="~/assets/Admin/libs/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap 4 -->
+    <script src="~/assets/Admin/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AdminLTE app -->
+    <script src="~/assets/Admin/js/adminlte.min.js"></script>
+
+    <!------------------------------ Begin embed Angularjs ------------------------------>
+    <!-- Angular JS -->
+    <script src="~/assets/Admin/libs/angular-1.8.2/angular.js"></script>
+
+    <!-- UI Router -->
+    <script src="~/assets/admin/libs/angular-ui-router/angular-ui-router.js"></script>
+
+    <!-- Toast js -->
+    <script src="~/assets/admin/libs/toastr/toastr.js"></script>
+
+    <!-- CkEditor -->
+    <script src="~/assets/admin/libs/ckeditor/ckeditor.js"></script>
+
+    <!-- ng - CkEditor -->
+    <script src="~/assets/admin/libs/ng-ckeditor/ng-ckeditor.js"></script>
+
+    <!-- Bootbox -->
+    <script src="~/assets/admin/libs/boot-box/bootbox.js"></script>
+
+    <!-- ng - Bootbox -->
+    <script src="~/assets/admin/libs/ng-boot-box/ngbootbox.js"></script>
+    
+    <!-- Chart.js -->
+    <script src="~/assets/admin/libs/chart.js/chart.js"></script>
+
+    <!-- angular-chart -->
+    <script src="~/assets/admin/libs/angular-chart.js/dist/angular-chart.js"></script>
+
+
+    
+    <!-- Module Common -->
+    <script src="~/app/shared/modules/fashionShop.common.js"></script>
+    <script src="~/app/shared/services/apiservice.js"></script>
+    <script src="~/app/shared/services/notificationService.js"></script>
+    <script src="~/app/shared/directives/paginationdirective.js"></script>
+    <script src="~/app/shared/filter/pulishedfilter.js"></script>
+    <script src="~/app/shared/filter/contactfilter.js"></script>
+    <script src="~/app/shared/filter/lockfilter.js"></script>
+    <script src="~/app/shared/filter/formatCurrencyVND.js"></script>
+    <script src="~/app/shared/filter/statusorder.js"></script>
+    <script src="~/app/shared/filter/typepaymentfilter.js"></script>
+    <script src="~/app/shared/services/authdata.js"></script>
+    <script src="~/app/shared/services/authenticationservice.js"></script>
+    <script src="~/app/shared/services/loginservice.js"></script>
+
+    <!-- Module components -->
+    <script src="~/app/components/products/product.module.js"></script>
+    <script src="~/app/components/categories/category.module.js"></script>
+    <script src="~/app/components/contacts/contact.module.js"></script>
+    <script src="~/app/components/orders/order.module.js"></script>
+    <script src="~/app/components/posts/post.module.js"></script>
+    <script src="~/app/components/roles/role.module.js"></script>
+    <script src="~/app/components/admin/admin.module.js"></script>
+    <script src="~/app/components/members/member.module.js"></script>
+    <script src="~/app/components/customers/customer.module.js"></script>
+    <script src="~/app/components/vouchers/voucher.module.js"></script>
+    <script src="~/app/components/statistic/statistic.module.js"></script>
+
+    <!-- Module Main -->
+    <script src="~/app/app.js"></script>
+    <script src="~/app/components/home/rootcontroller.js"></script>
+
+    <!-- Controller -->
+    <script src="~/app/components/home/homeController.js"></script>
+
+    <script src="~/app/components/products/productAddController.js"></script>
+    <script src="~/app/components/products/productdetailcontroller.js"></script>
+    <script src="~/app/components/products/producteditcontroller.js"></script>
+    <script src="~/app/components/products/productlistcontroller.js"></script>
+
+    <script src="~/app/components/categories/categoryaddcontroller.js"></script>
+    <script src="~/app/components/categories/categoryeditcontroller.js"></script>
+    <script src="~/app/components/categories/categorylistcontroller.js"></script>
+
+    <script src="~/app/components/contacts/contactlistcontroller.js"></script>
+
+    <script src="~/app/components/orders/orderdetailcontroller.js"></script>
+    <script src="~/app/components/orders/orderlistcontroller.js"></script>
+
+    <script src="~/app/components/posts/postaddcontroller.js"></script>
+    <script src="~/app/components/posts/posteditcontroller.js"></script>
+    <script src="~/app/components/posts/postlistcontroller.js"></script>
+
+    <script src="~/app/components/roles/roleaddcontroller.js"></script>
+    <script src="~/app/components/roles/roleeditcontroller.js"></script>
+    <script src="~/app/components/roles/rolelistcontroller.js"></script>
+
+    <script src="~/app/components/admin/adminaddcontroller.js"></script>
+    <script src="~/app/components/admin/admineditcontroller.js"></script>
+    <script src="~/app/components/admin/adminlistcontroller.js"></script>
+
+    <script src="~/app/components/members/memberaddcontroller.js"></script>
+    <script src="~/app/components/members/membereditcontroller.js"></script>
+    <script src="~/app/components/members/memberlistcontroller.js"></script>
+
+    <script src="~/app/components/customers/customerlistcontroller.js"></script>
+
+    <script src="~/app/components/vouchers/voucheraddcontroller.js"></script>
+    <script src="~/app/components/vouchers/voucherdetailcontroller.js"></script>
+    <script src="~/app/components/vouchers/vouchereditcontroller.js"></script>
+    <script src="~/app/components/vouchers/voucherlistcontroller.js"></script>
+
+    <script src="~/app/components/statistic/revenuestatisticcontroller.js"></script>
+
+    <script src="~/app/components/login/logincontroller.js"></script>
+</body>
+</html>
+

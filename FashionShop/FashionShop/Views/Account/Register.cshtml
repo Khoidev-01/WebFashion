@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="full-banner" style="height: 135px">
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="~/Home"><i class="fa fa-home"></i></a></li>
+            <li><a>Đăng ký</a></li>
+        </ul>
+        <div class="row login-page">
+            <div class="col-sm-6" id="content">
+                <div class="row">
+                    <div class="well">
+                        <h3>Đăng ký</h3>
+                        <p><strong>Vui lòng đăng ký để sử dụng dịch vụ</strong></p>
+                        @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            @Html.ValidationSummary(false, "", new {@class = "text-danger"})
+
+                            @if (ViewData["SuccessMsg"] != null)
+                            {
+                                <div class="alert alert-success" style="margin-bottom: 0;">Chúc mừng bạn đã đăng ký thành công</div>
+                                <div>
+                                    Vui lòng click <a href="~/Account/Login" style="margin-top: 0; margin-bottom: 20px; color: red">vào đây</a> để đăng nhập
+                                </div>
+                            }
+
+                            <div class="form-group">
+                                <label for="input-fullname" class="control-label">Họ và tên</label>
+
+                                <input type="text" class="form-control" id="input-fullname" placeholder="Nhập họ và tên" value="" name="fullname">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-email" class="control-label">E-Mail</label>
+
+                                <input type="text" class="form-control" id="input-email" placeholder="Nhập E-Mail" value="" name="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input-phonenumber" class="control-label">Số Điện thoại</label>
+
+                                <input type="text" class="form-control" id="input-phonenumber" placeholder="Nhập Số điện thoại" value="" name="phonenumber">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input-password" class="control-label">Mật khẩu</label>
+
+                                <input type="password" class="form-control" id="input-password" placeholder="Nhập mật khẩu" value="" name="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-repassword" class="control-label">Nhập lại mật khẩu</label>
+
+                                <input type="password" class="form-control" id="input-repassword" placeholder="Nhập lại mật khẩu" value="" name="repassword">
+                            </div>
+                            <div class="form-group" style="text-align: end;">
+                                <input type="submit" class="btn btn-primary" value="Đăng ký" style="width: 100%;">
+                                <a href="~/Account/Login">Đăng nhập</a>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
